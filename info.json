@@ -1,0 +1,9 @@
+{
+  "name": "Igrys",
+  "version": "0.1.0",
+  "title": "Igrys",
+  "author": "You",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0", "space-age >= 1.0", "PlanetsLib >= 1.2"],
+  "description": "My New Planet"
+}
