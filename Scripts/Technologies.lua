@@ -69,5 +69,27 @@ data:extend({
             item = "igrys-glass",
             count = 1
         }
+    }, {
+        type = "technology",
+        name = "igrys-conductive-brick",
+        icon = "__Igrys__/Assets/Technologies/conductive-brick.png",
+        icon_size = 1024,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-conductive-brick"
+            }, {
+                type = "unlock-recipe",
+                recipe = "igrys-copper-rail"
+            }
+        },
+        prerequisites = {
+            "planet-discovery-igrys"
+        },
+        research_trigger ={
+            type = "mine-entity",
+            entity = "igrys-stone",
+            count = 100
+        }
     }
 })

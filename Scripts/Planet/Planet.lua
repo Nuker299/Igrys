@@ -1,7 +1,5 @@
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
-
-
 PlanetsLib:extend({
     {
         type = "planet",
@@ -37,27 +35,21 @@ PlanetsLib:extend({
                 },
                 ["entity"] = {
                     settings = {
-                        --["bauxite"] = {},
-                        --["sludge"] = {},
-                        --["water-spring"] = {},
-                        ["stone"] = {},
-                        ["uranium-ore"] = {},
-
-                        --["big-alumina-rock"] = {},
-
+                        ["igrys-stone"] = {},
+                        ["igrys-light-oil"] = {},
+                        ["igrys-water"] = {},
                     }
                 },
                 ["decorative"] = {
                     settings = {
                         ["medium-sand-rock"] = {},
-                        ["small-sand-rock"] = {}
+                        ["small-sand-rock"] = {},
                     }
                 }
             }
         },
         gravity_pull = 1,
         draw_orbit = true,
-        --magnitude = 1,
         order = "e[gleba]-a[igrys]",
         pollutant_type = nil,
         solar_power_in_space = 120,
@@ -69,7 +61,6 @@ PlanetsLib:extend({
             arrival = { "platform-to-planet-b" },
             departure = { "planet-to-platform-a" },
         },
-        --procession_graphic_catalogue = planet_catalogue_cerys,
         surface_properties = {
             ["day-night-cycle"] = 60 * 60 * 5,
             ["magnetic-field"] = 1, -- Fulgora is 99
@@ -94,7 +85,7 @@ data:extend({
         subgroup = "planet-connections",
         from = "vulcanus",
         to = "igrys",
-        order = "c",
+        order = "d",
         length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora),
     },{
@@ -103,7 +94,7 @@ data:extend({
         subgroup = "planet-connections",
         from = "gleba",
         to = "igrys",
-        order = "c",
+        order = "d",
         length = 30000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus),
     },
