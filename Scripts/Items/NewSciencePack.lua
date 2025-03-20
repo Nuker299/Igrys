@@ -17,10 +17,10 @@ data:extend{
         ingredients = {
             {type = "item", name = "automation-science-pack", amount = 5},
             {type = "item", name = "production-science-pack", amount = 1},
-            {type = "item", name = "igrys-glass", amount = 1},
+            {type = "item", name = "igrys-magic-teseract", amount = 1},
         },
         results = {
-            {type = "item", name = "igrys-mineral-science-pack", amount = 5},
+            {type = "item", name = "igrys-mineral-science-pack", amount = 2},
         },
         subgroup = "science-pack",
         order = "i[igrys-mineral-science-pack]",

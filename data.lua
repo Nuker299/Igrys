@@ -1,10 +1,10 @@
 require("Scripts.Planet.Planet")
 require("Scripts.Planet.Resources")
 
-require("Scripts.Entity.GlassSpaceRocket")
+--require("Scripts.Entity.GlassSpaceRocket")
+--require("Scripts.Entity.ScienceMachine")
 require("Scripts.Entity.CopperPlateMachine")
 require("Scripts.Entity.MagicFluidPumper")
-require("Scripts.Entity.ScienceMachine")
 
 require("Scripts.Recipes.VariantCopper")
 require("Scripts.Recipes.VariantSciencePacks")

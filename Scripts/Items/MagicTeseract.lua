@@ -10,9 +10,9 @@ data:extend({
         order = "c[igrys-magic-teseract]"
     }, {
         type = "recipe",
-        name = "magic-fluid-processing",
+        name = "igrys-magic-teseract",
         category = "advanced-crafting",
-        --subgroup = "igrys-magic",
+        subgroup = "igrys-magic",
         enabled = settings.startup["igrys-enable-all"].value,
         energy_required = 5,
         ingredients = {
