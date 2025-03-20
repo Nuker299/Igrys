@@ -1,4 +1,4 @@
-function GlassSpaceRocket()
+
     local glassSpaceRocketEntity = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
     glassSpaceRocketEntity.name = "igrys-glass-space-rocket"
     glassSpaceRocketEntity.minable.result = "igrys-glass-space-rocket"
@@ -20,6 +20,3 @@ function GlassSpaceRocket()
     table.insert(glassRocketPartRecipe.ingredients, {type="item", name="igrys-glass", amount=1})
     
     data:extend{glassSpaceRocketEntity, glassSpaceRocketItem, glassSpaceRocketRecipe, glassRocketPartRecipe}
-end
-
-return GlassSpaceRocket

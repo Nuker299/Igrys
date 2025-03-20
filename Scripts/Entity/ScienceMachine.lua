@@ -1,4 +1,4 @@
-local function DataScienceMachine()
+
     local recipeCategory = {
         name = "enriched-science-pack",
         type = "recipe-category"
@@ -39,6 +39,3 @@ local function DataScienceMachine()
     }
 
     data:extend{scienceEnhancerMachine, scienceEnhancerMachineItem, scienceEnhancerMachineRecipe}
-end 
-
-return DataScienceMachine
