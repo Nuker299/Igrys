@@ -38,6 +38,7 @@ PlanetsLib:extend({
                         ["igrys-stone"] = {},
                         ["igrys-light-oil"] = {},
                         ["igrys-water"] = {},
+                        ["igrys-magic-fluid"] = {},
                     }
                 },
                 ["decorative"] = {
@@ -63,9 +64,9 @@ PlanetsLib:extend({
         },
         surface_properties = {
             ["day-night-cycle"] = 60 * 60 * 5,
-            ["magnetic-field"] = 1, -- Fulgora is 99
+            ["magnetic-field"] = 20, -- Fulgora is 99
             ["solar-power"] = 100, -- No atmosphere
-            pressure = 5,
+            pressure = 2000,
             gravity = 1, -- 0.1 is minimum for chests
         },
         asteroid_spawn_influence = 1,
