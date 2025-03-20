@@ -121,9 +121,9 @@ local restrictedRecipe =
     icon_size = 1024,
     enabled = settings.startup["igrys-enable-all"].value,
     ingredients = {
-        {type="item", name="igrys-glass", amount=20},
-        {type="item", name="steel-plate", amount=50},
-        {type="item", name="igrys-conductive-brick", amount=10},
+        {type="item", name="igrys-glass", amount=10},
+        {type="item", name="steel-plate", amount=20},
+        {type="item", name="igrys-conductive-brick", amount=50},
     },
     results = {
         {type="item", name="igrys-magic-pumpjack", amount=1},

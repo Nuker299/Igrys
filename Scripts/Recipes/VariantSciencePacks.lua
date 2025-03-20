@@ -12,7 +12,7 @@ data:extend({
             {type = "item", name = "automation-science-pack", amount = 5},
         },
         subgroup = "science-pack",
-        order = "a[igrys-automation-science-pack]",
+        order = "az[igrys-automation-science-pack]",
         allow_productivity = true
     }, {
         type = "recipe",
@@ -26,6 +26,7 @@ data:extend({
             {type = "item", name = "rail", amount = 30}
         },
         results = {{type="item", name="production-science-pack", amount=3}},
+        order = "ez[production-science-pack]",
         allow_productivity = true
     },
 })

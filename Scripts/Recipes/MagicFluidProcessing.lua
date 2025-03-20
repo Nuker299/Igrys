@@ -5,10 +5,10 @@ data:extend({
         category = "chemistry",
         subgroup = "igrys-magic",
         enabled = settings.startup["igrys-enable-all"].value,
-        energy_required = 1,
+        energy_required = 5,
         ingredients = {
-            {type = "fluid", name = "igrys-magic-fluid", amount = 10},
-            {type = "item", name = "steel-plate", amount = 1},
+            {type = "fluid", name = "igrys-magic-fluid", amount = 100},
+            {type = "item", name = "igrys-conductive-brick", amount = 10},
         },
         results = {
             {type = "item", name = "igrys-magic-part-1", amount = 1},

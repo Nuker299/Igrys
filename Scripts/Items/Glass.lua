@@ -14,10 +14,10 @@ local glass = {
         name = "igrys-glass",
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
-        ingredients = {{type="item", name="stone", amount=60}},
+        ingredients = {{type="item", name="stone", amount=300}},
         results = {
-            {type="item", name="igrys-glass", amount=10},
-            {type="item", name="stone", amount=10}
+            {type="item", name="igrys-glass", amount=50},
+            {type="item", name="stone", amount=50}
         },
         main_product = "igrys-glass",
         energy_required = 60,

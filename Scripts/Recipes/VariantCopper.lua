@@ -9,7 +9,8 @@ data:extend{
         },
         results = {{type="item", name="electronic-circuit", amount=2}},
         enabled = settings.startup["igrys-enable-all"].value,
-        allow_productivity = true
+        allow_productivity = true,
+        energy_required = 3,
     }, {
         type = "recipe",
         name = "igrys-copper-rail",
@@ -20,7 +21,8 @@ data:extend{
             {type = "item", name = "igrys-conductive-brick", amount = 1},
             {type = "item", name = "copper-plate", amount = 1}
         },
-        results = {{type="item", name="rail", amount=1}}
+        results = {{type="item", name="rail", amount=1}},
+        order = "a[rail]-b[igrys-copper-rail]"
     }, {
         type = "recipe",
         name = "igrys-sulfuric-acid",
@@ -51,7 +53,7 @@ data:extend{
             {type = "fluid", name = "light-oil", amount = 30},
             {type = "item", name = "igrys-glass", amount = 1}
         },
-        results =
+        results =e
         {
             {type = "item", name = "plastic-bar", amount = 1}
         },
@@ -63,8 +65,8 @@ data:extend{
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         ingredients = {
-            {type="fluid", name="light-oil", amount=10},
-            {type="item", name="stone", amount=5}
+            {type="fluid", name="light-oil", amount=20},
+            {type="item", name="stone", amount=10}
         },
         results = {
             {type="item", name="steel-plate", amount=1},
