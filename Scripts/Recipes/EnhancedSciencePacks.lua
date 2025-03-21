@@ -21,7 +21,7 @@ for _, sciencePack in ipairs(sciencePacks) do
         newRecipe.category = "enriched-science-pack"
         newRecipe.enabled = true
 
-        table.insert(newRecipe.ingredients, {type = "item", name = "uranium-235", amount = 1})
+        table.insert(newRecipe.ingredients, {type = "fluid", name = "igrys-magic-fluid", amount = 5})
 
         --newRecipe.localized_name = {"recipe-name.enriched-science-pack", "item-name." .. sciencePack.name}
 

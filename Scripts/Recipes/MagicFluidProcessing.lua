@@ -25,3 +25,5 @@ data:extend({
         order = "m"
     }
 })
+
+PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-magic-fluid-processing"], "igrys")

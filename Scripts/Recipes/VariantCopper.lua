@@ -1,3 +1,5 @@
+require("Scripts.Other.Icons")
+
 data:extend{
     {
         type = "recipe",
@@ -19,10 +21,10 @@ data:extend{
         {
             {type = "item", name = "stone", amount = 1},
             {type = "item", name = "igrys-conductive-brick", amount = 1},
-            {type = "item", name = "copper-plate", amount = 1}
+            {type = "item", name = "steel-plate", amount = 1}
         },
         results = {{type="item", name="rail", amount=1}},
-        order = "a[rail]-b[igrys-copper-rail]"
+        order = "a[rail]-b[igrys-copper-rail]",
     }, {
         type = "recipe",
         name = "igrys-sulfuric-acid",
@@ -53,7 +55,7 @@ data:extend{
             {type = "fluid", name = "light-oil", amount = 30},
             {type = "item", name = "igrys-glass", amount = 1}
         },
-        results =e
+        results =
         {
             {type = "item", name = "plastic-bar", amount = 1}
         },
@@ -66,12 +68,12 @@ data:extend{
         allow_productivity = true,
         ingredients = {
             {type="fluid", name="light-oil", amount=20},
-            {type="item", name="stone", amount=10}
+            {type="item", name="stone-brick", amount=5}
         },
         results = {
             {type="item", name="steel-plate", amount=1},
         },
         energy_required = 10,
-        category = "chemistry"
+        category = "chemistry",
     },
 }

@@ -46,7 +46,7 @@ data:extend({
             "automation-3"
         },
         unit = {
-            count = 250,
+            count = 500,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -74,7 +74,7 @@ data:extend({
             "igrys-glassworking"
         },
         unit = {
-            count = 500,
+            count = 1000,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -166,7 +166,7 @@ data:extend({
             "igrys-conductive-brick-usage",
         },
         unit = {
-            count = 250,
+            count = 500,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -191,7 +191,7 @@ data:extend({
             "planet-discovery-igrys",
         },
         unit = {
-            count = 250,
+            count = 500,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -216,7 +216,7 @@ data:extend({
             "planet-discovery-igrys",
         },
         unit = {
-            count = 250,
+            count = 500,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -241,7 +241,7 @@ data:extend({
             "planet-discovery-igrys",
         },
         unit = {
-            count = 250,
+            count = 500,
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
@@ -251,5 +251,101 @@ data:extend({
             },
             time = 60,
         },
-    },
+    },{
+        type = "technology",
+        name = "igrys-rich-magic-teseract",
+        icon = "__Igrys__/Assets/Items/Teseract.png",
+        icon_size = 1024,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-teseract"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-1"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-2"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-3"
+            }
+        },
+        prerequisites = {
+            "igrys-mineral-science",
+        },
+        unit = {
+            count = 250,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1},
+                { "metallurgic-science-pack", 1},
+                {"igrys-mineral-science-pack", 1}
+            },
+            time = 60,
+        },
+    },{
+        type = "technology",
+        name = "igrys-strong-barrel",
+        icon = "__Igrys__/Assets/Items/empty-barrel.png",
+        icon_size = 1024,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-strong-barrel"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-strong-barrel-filled-magic-fluid"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-empty-strong-barrel-filled-magic-fluid"
+            }
+        },
+        prerequisites = {
+            "igrys-rich-magic-teseract",
+        },
+        unit = {
+            count = 500,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1},
+                { "metallurgic-science-pack", 1},
+                {"igrys-mineral-science-pack", 1}
+            },
+            time = 60,
+        }
+    },{
+        type = "technology",
+        name = "igrys-glass-space-rocket",
+        icon = data.raw["item"]["rocket-silo"].icon,
+        icon_size = data.raw["item"]["rocket-silo"].icon_size,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-glass-space-rocket"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-glass-space-rocket-part"
+            }
+        },
+        prerequisites = {
+            "igrys-rich-magic-teseract",
+        },
+        unit = {
+            count = 1000,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1},
+                { "metallurgic-science-pack", 1},
+                { "igrys-mineral-science-pack", 1}
+            },
+            time = 60,
+        }
+    }
 })
