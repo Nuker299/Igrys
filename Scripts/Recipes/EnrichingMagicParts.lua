@@ -11,7 +11,7 @@ data:extend({
         results = {
             {type="item", name="igrys-rich-magic-part-1", amount=1},
         },
-        energy_required = 10,
+        energy_required = 5,
         category = "advanced-crafting"
     }, {
         type = "recipe",
@@ -20,12 +20,12 @@ data:extend({
         allow_productivity = true,
         ingredients = {
             {type="item", name="igrys-magic-part-2", amount=1},
-            {type="item", name="igrys-conductive-brick", amount=5}
+            {type="item", name="igrys-conductive-brick", amount=10}
         },
         results = {
             {type="item", name="igrys-rich-magic-part-2", amount=1},
         },
-        energy_required = 10,
+        energy_required = 5,
         category = "advanced-crafting"
     }, {
         type = "recipe",
@@ -39,11 +39,7 @@ data:extend({
         results = {
             {type="item", name="igrys-rich-magic-part-3", amount=1},
         },
-        energy_required = 10,
+        energy_required = 5,
         category = "advanced-crafting"
     },
 })
-
-PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-rich-magic-part-1"], "igrys")
-PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-rich-magic-part-2"], "igrys")
-PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-rich-magic-part-3"], "igrys")

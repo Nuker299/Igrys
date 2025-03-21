@@ -73,7 +73,7 @@ data:extend{
         results = {
             {type="item", name="steel-plate", amount=1},
         },
-        energy_required = 10,
+        energy_required = 5,
         category = "chemistry",
     },
 }

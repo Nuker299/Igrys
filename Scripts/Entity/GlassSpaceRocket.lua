@@ -2,7 +2,7 @@ local glassSpaceRocketEntity = table.deepcopy(data.raw["rocket-silo"]["rocket-si
 glassSpaceRocketEntity.name = "igrys-glass-space-rocket"
 glassSpaceRocketEntity.minable.result = "igrys-glass-space-rocket"
 glassSpaceRocketEntity.rocket_parts_required = 20
-glassSpaceRocketEntity.fixed_recipe = "igrys-glass-space-rocket-part"
+glassSpaceRocketEntity.fixed_recipe = "igrys-glass-rocket-part"
 
 local glassSpaceRocketItem = table.deepcopy(data.raw["item"]["rocket-silo"])
 glassSpaceRocketItem.name = "igrys-glass-space-rocket"
@@ -22,7 +22,7 @@ glassSpaceRocketRecipe.main_product = "igrys-glass-space-rocket"
 glassSpaceRocketRecipe.enabled = settings.startup["igrys-enable-all"].value
 
 local glassRocketPartRecipe = table.deepcopy(data.raw["recipe"]["rocket-part"])
-glassRocketPartRecipe.name = "igrys-glass-space-rocket-part"
+glassRocketPartRecipe.name = "igrys-glass-rocket-part"
 table.insert(glassRocketPartRecipe.ingredients, {type="item", name="igrys-glass", amount=1})
 
 data:extend{glassSpaceRocketEntity, glassSpaceRocketItem, glassSpaceRocketRecipe, glassRocketPartRecipe}

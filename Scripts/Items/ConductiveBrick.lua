@@ -25,3 +25,5 @@ data:extend{
         category = "electronics"
     }
 }
+
+PlanetsLib.set_default_import_location("igrys-conductive-brick", "igrys")

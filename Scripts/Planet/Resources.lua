@@ -160,7 +160,7 @@ data:extend{
                 },
             },
             required_fluid = "water",
-            fluid_amount = 1000
+            fluid_amount = 100
         },
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},

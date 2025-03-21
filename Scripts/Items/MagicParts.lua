@@ -67,3 +67,10 @@ data:extend({
         weight = 1000 * 50
     }
 })
+
+PlanetsLib.set_default_import_location("igrys-magic-part-1", "igrys")
+PlanetsLib.set_default_import_location("igrys-magic-part-2", "igrys")
+PlanetsLib.set_default_import_location("igrys-magic-part-3", "igrys")
+PlanetsLib.set_default_import_location("igrys-rich-magic-part-1", "igrys")
+PlanetsLib.set_default_import_location("igrys-rich-magic-part-2", "igrys")
+PlanetsLib.set_default_import_location("igrys-rich-magic-part-3", "igrys")

@@ -44,7 +44,8 @@ data:extend({
             {type="item", name="igrys-strong-barrel-filled-magic-fluid", amount=1},
         },
         energy_required = 1,
-        category = "crafting-with-fluid"
+        category = "crafting-with-fluid",
+        subgroup = "fill-barrel"
     }, {
         type = "recipe",
         name = "igrys-empty-strong-barrel-filled-magic-fluid",
@@ -61,7 +62,10 @@ data:extend({
         category = "crafting-with-fluid",
         icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
         icon_size = 1024,
+        subgroup = "empty-barrel"
     }
 })
 
+PlanetsLib.set_default_import_location("igrys-strong-barrel", "igrys")
+PlanetsLib.set_default_import_location("igrys-strong-barrel-filled-magic-fluid", "igrys")
 PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-strong-barrel"], "igrys")

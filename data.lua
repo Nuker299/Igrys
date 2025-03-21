@@ -11,6 +11,7 @@ require("Scripts.Recipes.VariantSciencePacks")
 require("Scripts.Recipes.StuffOutOfThinAir")
 require("Scripts.Recipes.MagicFluidProcessing")
 require("Scripts.Recipes.EnrichingMagicParts")
+require("Scripts.Recipes.MagicTeseract")
 
 require("Scripts.Items.NewSciencePack")
 require("Scripts.Items.ConductiveBrick")

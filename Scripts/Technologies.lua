@@ -116,9 +116,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "igrys-magic-fluid-processing"
-            }, {
-                type = "unlock-recipe",
-                recipe = "igrys-magic-teseract"
             }
         },
         prerequisites = {
@@ -128,6 +125,41 @@ data:extend({
             type = "mine-entity",
             entity = "igrys-magic-fluid",
             count = 1
+        },
+        essential = true,
+    },{
+        type = "technology",
+        name = "igrys-magic-teseract",
+        icon = "__Igrys__/Assets/Items/teseract.png",
+        icon_size = 1024,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-1"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-2"
+            },{
+                type = "unlock-recipe",
+                recipe = "igrys-rich-magic-part-3"
+            }, {
+                type = "unlock-recipe",
+                recipe = "igrys-magic-teseract-1"
+            }, {
+                type = "unlock-recipe",
+                recipe = "igrys-magic-teseract-2"
+            }, {
+                type = "unlock-recipe",
+                recipe = "igrys-magic-teseract-3"
+            }
+        },
+        prerequisites = {
+            "igrys-magic-fluid"
+        },
+        research_trigger ={
+            type = "craft-item",
+            item = "igrys-magic-part-1",
+            count = 10
         },
         essential = true,
     }, {
@@ -142,7 +174,7 @@ data:extend({
             }
         },
         prerequisites = {
-            "igrys-magic-fluid",
+            "igrys-magic-teseract",
             "igrys-glassworking-2",
         },
         research_trigger ={
@@ -254,21 +286,12 @@ data:extend({
     },{
         type = "technology",
         name = "igrys-rich-magic-teseract",
-        icon = "__Igrys__/Assets/Items/Teseract.png",
+        icon = "__Igrys__/Assets/Items/teseract.png",
         icon_size = 1024,
         effects = {
             {
                 type = "unlock-recipe",
                 recipe = "igrys-rich-magic-teseract"
-            },{
-                type = "unlock-recipe",
-                recipe = "igrys-rich-magic-part-1"
-            },{
-                type = "unlock-recipe",
-                recipe = "igrys-rich-magic-part-2"
-            },{
-                type = "unlock-recipe",
-                recipe = "igrys-rich-magic-part-3"
             }
         },
         prerequisites = {
@@ -329,7 +352,7 @@ data:extend({
                 recipe = "igrys-glass-space-rocket"
             },{
                 type = "unlock-recipe",
-                recipe = "igrys-glass-space-rocket-part"
+                recipe = "igrys-glass-rocket-part"
             }
         },
         prerequisites = {

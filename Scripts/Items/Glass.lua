@@ -25,3 +25,5 @@ local glass = {
     }
     
     data:extend{glass, glassRecipe}
+
+PlanetsLib.set_default_import_location("igrys-glass", "igrys")

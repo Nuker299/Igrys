@@ -11,12 +11,6 @@ PlanetsLib:extend({
             },
             distance = 10,
             orientation = 0.85,
-            sprite = {
-                type = "sprite",
-                filename = "__Igrys__/Assets/igrys.png",
-                size = 335,
-                scale = 0.7,
-            },
         },
         subgroup = "planets",
         label_orientation = 0.55,
@@ -100,3 +94,5 @@ data:extend({
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus),
     },
 })
+
+PlanetsLib.borrow_music(data.raw["planet"]["nauvis"], data.raw["planet"]["igrys"])
