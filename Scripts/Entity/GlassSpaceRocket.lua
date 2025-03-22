@@ -23,6 +23,6 @@ glassSpaceRocketRecipe.enabled = settings.startup["igrys-enable-all"].value
 
 local glassRocketPartRecipe = table.deepcopy(data.raw["recipe"]["rocket-part"])
 glassRocketPartRecipe.name = "igrys-glass-rocket-part"
-table.insert(glassRocketPartRecipe.ingredients, {type="item", name="igrys-glass", amount=1})
+table.insert(glassRocketPartRecipe.ingredients, {type="item", name="igrys-glass", amount=5})
 
 data:extend{glassSpaceRocketEntity, glassSpaceRocketItem, glassSpaceRocketRecipe, glassRocketPartRecipe}

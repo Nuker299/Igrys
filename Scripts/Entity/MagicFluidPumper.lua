@@ -68,7 +68,7 @@ data:extend({
             sheet =
             {
                 filename = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-                size = 1024,
+                size = 256,
                 scale = 0.1,
                 frames = 1,
             }
@@ -104,7 +104,7 @@ data:extend({
         type = "item",
         name = "igrys-magic-pumpjack",
         icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        icon_size = 1024,
+        icon_size = 256,
 
         subgroup = "extraction-machine",
 
@@ -118,7 +118,7 @@ local restrictedRecipe =
     type = "recipe",
     name = "igrys-magic-pumpjack",
     icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-    icon_size = 1024,
+    icon_size = 256,
     enabled = settings.startup["igrys-enable-all"].value,
     ingredients = {
         {type="item", name="igrys-glass", amount=10},

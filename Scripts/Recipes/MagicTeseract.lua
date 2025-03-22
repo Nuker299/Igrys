@@ -1,3 +1,5 @@
+local partsPerTeseract = 2
+
 data:extend({
     {
         type = "recipe",
@@ -7,9 +9,9 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         energy_required = 10,
         ingredients = {
-            {type = "item", name = "igrys-rich-magic-part-1", amount = 5},
-            {type = "item", name = "igrys-magic-part-2", amount = 5},
-            {type = "item", name = "igrys-magic-part-3", amount = 5}
+            {type = "item", name = "igrys-rich-magic-part-1", amount = partsPerTeseract},
+            {type = "item", name = "igrys-magic-part-2", amount = partsPerTeseract},
+            {type = "item", name = "igrys-magic-part-3", amount = partsPerTeseract}
         },
         results = {
             {type = "item", name = "igrys-magic-teseract", amount = 1},
@@ -23,9 +25,9 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         energy_required = 10,
         ingredients = {
-            {type = "item", name = "igrys-magic-part-1", amount = 5},
-            {type = "item", name = "igrys-rich-magic-part-2", amount = 5},
-            {type = "item", name = "igrys-magic-part-3", amount = 5}
+            {type = "item", name = "igrys-magic-part-1", amount = partsPerTeseract},
+            {type = "item", name = "igrys-rich-magic-part-2", amount = partsPerTeseract},
+            {type = "item", name = "igrys-magic-part-3", amount = partsPerTeseract}
         },
         results = {
             {type = "item", name = "igrys-magic-teseract", amount = 1},
@@ -39,9 +41,9 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         energy_required = 10,
         ingredients = {
-            {type = "item", name = "igrys-magic-part-1", amount = 5},
-            {type = "item", name = "igrys-magic-part-2", amount = 5},
-            {type = "item", name = "igrys-rich-magic-part-3", amount = 5}
+            {type = "item", name = "igrys-magic-part-1", amount = partsPerTeseract},
+            {type = "item", name = "igrys-magic-part-2", amount = partsPerTeseract},
+            {type = "item", name = "igrys-rich-magic-part-3", amount = partsPerTeseract}
         },
         results = {
             {type = "item", name = "igrys-magic-teseract", amount = 1},
@@ -55,9 +57,9 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         energy_required = 10,
         ingredients = {
-            {type = "item", name = "igrys-rich-magic-part-1", amount = 5},
-            {type = "item", name = "igrys-rich-magic-part-2", amount = 5},
-            {type = "item", name = "igrys-rich-magic-part-3", amount = 5}
+            {type = "item", name = "igrys-rich-magic-part-1", amount = partsPerTeseract},
+            {type = "item", name = "igrys-rich-magic-part-2", amount = partsPerTeseract},
+            {type = "item", name = "igrys-rich-magic-part-3", amount = partsPerTeseract}
         },
         results = {
             {type = "item", name = "igrys-rich-magic-teseract", amount = 1},

@@ -13,14 +13,14 @@ data:extend{
         type = "recipe",
         name = "igrys-mineral-science-pack",
         enabled = settings.startup["igrys-enable-all"].value,
-        energy_required = 10,
+        energy_required = 60,
         ingredients = {
             {type = "item", name = "automation-science-pack", amount = 10},
             {type = "item", name = "production-science-pack", amount = 1},
             {type = "item", name = "igrys-magic-teseract", amount = 1},
         },
         results = {
-            {type = "item", name = "igrys-mineral-science-pack", amount = 2},
+            {type = "item", name = "igrys-mineral-science-pack", amount = 3},
         },
         subgroup = "science-pack",
         order = "i[igrys-mineral-science-pack]",

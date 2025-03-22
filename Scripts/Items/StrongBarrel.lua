@@ -45,7 +45,6 @@ data:extend({
         },
         energy_required = 1,
         category = "crafting-with-fluid",
-        subgroup = "fill-barrel"
     }, {
         type = "recipe",
         name = "igrys-empty-strong-barrel-filled-magic-fluid",
@@ -62,7 +61,6 @@ data:extend({
         category = "crafting-with-fluid",
         icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
         icon_size = 1024,
-        subgroup = "empty-barrel"
     }
 })
 

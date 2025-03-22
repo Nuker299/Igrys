@@ -54,8 +54,7 @@ data:extend({
                 { "production-science-pack", 1},
             },
             time = 60,
-        },
-        essential = true,
+        }
     }, {
         type = "technology",
         name = "igrys-glassworking-2",
@@ -82,13 +81,12 @@ data:extend({
                 { "production-science-pack", 1},
             },
             time = 30,
-        },
-        essential = true,
+        }
     }, {
         type = "technology",
         name = "igrys-conductive-brick-usage",
         icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        icon_size = 1024,
+        icon_size = 256,
         effects = {
             {
                 type = "unlock-recipe",
@@ -105,8 +103,7 @@ data:extend({
             type = "craft-item",
             item = "igrys-conductive-brick",
             count = 10
-        },
-        essential = true,
+        }
     }, {
         type = "technology",
         name = "igrys-magic-fluid",
@@ -125,8 +122,7 @@ data:extend({
             type = "mine-entity",
             entity = "igrys-magic-fluid",
             count = 1
-        },
-        essential = true,
+        }
     },{
         type = "technology",
         name = "igrys-magic-teseract",
@@ -160,8 +156,7 @@ data:extend({
             type = "craft-item",
             item = "igrys-magic-part-1",
             count = 10
-        },
-        essential = true,
+        }
     }, {
         type = "technology",
         name = "igrys-mineral-science",
@@ -175,7 +170,6 @@ data:extend({
         },
         prerequisites = {
             "igrys-magic-teseract",
-            "igrys-glassworking-2",
         },
         research_trigger ={
             type = "craft-item",

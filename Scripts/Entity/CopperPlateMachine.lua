@@ -3,7 +3,7 @@ data:extend({
         type = "assembling-machine",
         name = "igrys-copper-plate-machine",
         icon = "__Igrys__/Assets/Entity/CopperPlateMachine.png",
-        icon_size = 1024,
+        icon_size = 256,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         
         fixed_recipe = "igrys-free-copper-plate",
@@ -30,8 +30,8 @@ data:extend({
             animation =
             {
                 filename = "__Igrys__/Assets/Entity/CopperPlateMachine.png",
-                width = 1024,
-                height = 1024,
+                width = 256,
+                height = 256,
                 frame_count = 1,
                 line_length = 1,
                 scale = 0.1,
@@ -41,7 +41,7 @@ data:extend({
         type = "item",
         name = "igrys-copper-plate-machine",
         icon = "__Igrys__/Assets/Entity/CopperPlateMachine.png",
-        icon_size = 1024,
+        icon_size = 256,
         
         subgroup = "extraction-machine",
         
@@ -55,7 +55,7 @@ local restrictedRecipe =
         type = "recipe",
         name = "igrys-copper-plate-machine",
         icon = "__Igrys__/Assets/Entity/CopperPlateMachine.png",
-        icon_size = 1024,
+        icon_size = 256,
         enabled = settings.startup["igrys-enable-all"].value,
         ingredients = {
             {type="item", name="igrys-glass", amount=50},
