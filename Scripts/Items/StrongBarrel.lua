@@ -3,7 +3,6 @@ data:extend({
         type = "item",
         name = "igrys-strong-barrel",
         icon = "__Igrys__/Assets/Items/empty-barrel.png",
-        icon_size = 1024,
         subgroup = "igrys-magic",
         order = "f[igrys-strong-barrel]",
         stack_size = 10,
@@ -26,7 +25,6 @@ data:extend({
         type = "item",
         name = "igrys-strong-barrel-filled-magic-fluid",
         icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
-        icon_size = 1024,
         subgroup = "igrys-magic",
         order = "g[igrys-strong-barrel]",
         stack_size = 10,
@@ -60,7 +58,6 @@ data:extend({
         energy_required = 1,
         category = "crafting-with-fluid",
         icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
-        icon_size = 1024,
     }
 })
 

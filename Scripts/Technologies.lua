@@ -307,7 +307,6 @@ data:extend({
         type = "technology",
         name = "igrys-strong-barrel",
         icon = "__Igrys__/Assets/Items/empty-barrel.png",
-        icon_size = 1024,
         effects = {
             {
                 type = "unlock-recipe",
