@@ -3,7 +3,7 @@ data:extend{
         type = "tool",
         name = "igrys-mineral-science-pack",
         icon = "__Igrys__/Assets/Items/mineral-science-pack.png",
-        icon_size = 1024,
+        
         subgroup = "science-pack",
         order = "i[igrys-mineral-science-pack]",
         stack_size = 200,

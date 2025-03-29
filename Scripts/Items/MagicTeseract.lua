@@ -5,7 +5,7 @@ data:extend({
         type="item",
         name="igrys-magic-teseract",
         icon = "__Igrys__/Assets/Items/teseract.png",
-        icon_size = 1024,
+        
         stack_size = 10,
         subgroup = "igrys-magic",
         weight = 1000 * 100,
@@ -15,7 +15,7 @@ data:extend({
         name="igrys-rich-magic-teseract",
         icons = RichIcons({
             icon = "__Igrys__/Assets/Items/teseract.png",
-            icon_size = 1024,
+            
         }),
         stack_size = 10,
         subgroup = "igrys-magic",

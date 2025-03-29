@@ -3,7 +3,7 @@ data:extend{
         type = "item",
         name = "igrys-conductive-brick",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        icon_size = 1024,
+        
         stack_size = 200,
         subgroup = "intermediate-product",
         weight = 1000 * 5

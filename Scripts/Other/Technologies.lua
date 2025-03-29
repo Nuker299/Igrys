@@ -108,7 +108,6 @@ data:extend({
         type = "technology",
         name = "igrys-magic-fluid",
         icon = "__Igrys__/Assets/Items/magic-fluid.png",
-        icon_size = 1024,
         effects = {
             {
                 type = "unlock-recipe",
@@ -127,7 +126,7 @@ data:extend({
         type = "technology",
         name = "igrys-magic-teseract",
         icon = "__Igrys__/Assets/Items/teseract.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -161,7 +160,7 @@ data:extend({
         type = "technology",
         name = "igrys-mineral-science",
         icon = "__Igrys__/Assets/Items/mineral-science-pack.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -181,7 +180,7 @@ data:extend({
         type = "technology",
         name = "igrys-production-science",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -206,7 +205,7 @@ data:extend({
         type = "technology",
         name = "igrys-steel-plate",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -231,7 +230,7 @@ data:extend({
         type = "technology",
         name = "igrys-plastic-bar",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -256,7 +255,7 @@ data:extend({
         type = "technology",
         name = "igrys-sulfuric-acid",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -281,7 +280,7 @@ data:extend({
         type = "technology",
         name = "igrys-rich-magic-teseract",
         icon = "__Igrys__/Assets/Items/teseract.png",
-        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
@@ -372,7 +371,7 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "igrys-science-enhancer-machine"
-            } -- rest will be added in EnhancedSciencePacks.lua
+            }
         },
         prerequisites = {
             "igrys-mineral-science",

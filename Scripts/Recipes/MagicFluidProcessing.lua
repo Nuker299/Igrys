@@ -16,7 +16,7 @@ data:extend({
             {type = "item", name = "igrys-magic-part-3", amount = 1}
         },
         icon = "__Igrys__/Assets/Items/magic-fluid.png",
-        icon_size = 1024,
+        
         order = "a[magic-fluid-processing]"
     }
 })
