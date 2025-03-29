@@ -10,6 +10,7 @@ data:extend{
             {type = "item", name = "copper-cable", amount = 5}
         },
         results = {{type="item", name="electronic-circuit", amount=2}},
+        icons = MadeFromIcons(data.raw["item"]["electronic-circuit"].icon, "__Igrys__/Assets/Items/glass.png"),
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         energy_required = 3,
@@ -26,6 +27,7 @@ data:extend{
             {type = "item", name = "steel-plate", amount = 1}
         },
         results = {{type="item", name="rail", amount=1}},
+        icons = MadeFromIcons("__base__/graphics/icons/rail.png", "__Igrys__/Assets/Items/conductive-brick.png"),
         order = "a[rail]-b[igrys-copper-rail]",
         recipe_category = "advanced-crafting",
         allow_as_intermediate = false
@@ -46,6 +48,7 @@ data:extend{
         {
             {type = "fluid", name = "sulfuric-acid", amount = 50}
         },
+        icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
         allow_productivity = true,
         allow_as_intermediate = false
     }, {
@@ -64,6 +67,7 @@ data:extend{
         {
             {type = "item", name = "plastic-bar", amount = 1}
         },
+        icons = MadeFromIcons(data.raw["item"]["plastic-bar"].icon, "__Igrys__/Assets/Items/glass.png"),
         allow_productivity = true,
         allow_as_intermediate = false
     },
@@ -79,6 +83,7 @@ data:extend{
         results = {
             {type="item", name="steel-plate", amount=1},
         },
+        icons = MadeFromIcons(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
         energy_required = 5,
         category = "chemistry",
         allow_as_intermediate = false

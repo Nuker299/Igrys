@@ -9,10 +9,10 @@ data:extend({
                 type = "unlock-space-location",
                 space_location = "igrys",
                 use_icon_overlay_constant = true,
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-conductive-brick"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-copper-plate-machine"
             }
@@ -24,8 +24,8 @@ data:extend({
         unit = {
             count = 1000,
             ingredients = {
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 }
             },
             time = 15,
         },
@@ -51,7 +51,7 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
+                { "production-science-pack", 1 },
             },
             time = 60,
         }
@@ -64,7 +64,7 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "igrys-electronic-circuit"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-automation-science-pack"
             },
@@ -78,7 +78,7 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
+                { "production-science-pack", 1 },
             },
             time = 30,
         }
@@ -99,7 +99,7 @@ data:extend({
         prerequisites = {
             "planet-discovery-igrys"
         },
-        research_trigger ={
+        research_trigger = {
             type = "craft-item",
             item = "igrys-conductive-brick",
             count = 10
@@ -107,7 +107,8 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-magic-fluid",
-        icon = "__Igrys__/Assets/Items/magic-fluid.png",
+        icon = "__Igrys__/Assets/Technologies/magic-fluid.png",
+        icon_size = 1024,
         effects = {
             {
                 type = "unlock-recipe",
@@ -117,24 +118,25 @@ data:extend({
         prerequisites = {
             "igrys-conductive-brick-usage"
         },
-        research_trigger ={
+        research_trigger = {
             type = "mine-entity",
             entity = "igrys-magic-fluid",
             count = 1
         }
-    },{
+    }, {
         type = "technology",
         name = "igrys-magic-teseract",
-        icon = "__Igrys__/Assets/Items/teseract.png",
-        
+        icon = "__Igrys__/Assets/Technologies/teseract.png",
+        icon_size = 1024,
+
         effects = {
             {
                 type = "unlock-recipe",
                 recipe = "igrys-rich-magic-part-1"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-rich-magic-part-2"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-rich-magic-part-3"
             }, {
@@ -151,7 +153,7 @@ data:extend({
         prerequisites = {
             "igrys-magic-fluid"
         },
-        research_trigger ={
+        research_trigger = {
             type = "craft-item",
             item = "igrys-magic-part-1",
             count = 10
@@ -159,8 +161,9 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-mineral-science",
-        icon = "__Igrys__/Assets/Items/mineral-science-pack.png",
-        
+        icon = "__Igrys__/Assets/Technologies/mineral-science-pack.png",
+        icon_size = 1024,
+
         effects = {
             {
                 type = "unlock-recipe",
@@ -170,7 +173,7 @@ data:extend({
         prerequisites = {
             "igrys-magic-teseract",
         },
-        research_trigger ={
+        research_trigger = {
             type = "craft-item",
             item = "igrys-magic-teseract",
             count = 1
@@ -179,8 +182,8 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-production-science",
-        icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        
+        icons = MadeFromIconsTech(data.raw["tool"]["production-science-pack"].icon, data.raw["item"]["stone-furnace"].icon),
+
         effects = {
             {
                 type = "unlock-recipe",
@@ -196,16 +199,16 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 }
             },
             time = 60,
         },
-    },{
+    }, {
         type = "technology",
         name = "igrys-steel-plate",
-        icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        
+        icons = MadeFromIconsTech(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
+
         effects = {
             {
                 type = "unlock-recipe",
@@ -221,16 +224,15 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 }
             },
             time = 60,
         },
     }, {
         type = "technology",
-        name = "igrys-plastic-bar",
-        icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        
+        name = "igrys-glassworking-3",
+        icon = "__Igrys__/Assets/Technologies/glassworking.png",
         effects = {
             {
                 type = "unlock-recipe",
@@ -238,7 +240,7 @@ data:extend({
             }
         },
         prerequisites = {
-            "planet-discovery-igrys",
+            "igrys-glassworking-2",
         },
         unit = {
             count = 500,
@@ -246,16 +248,16 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 }
             },
             time = 60,
         },
-    },{
+    }, {
         type = "technology",
         name = "igrys-sulfuric-acid",
-        icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        
+        icons = MadeFromIconsTech(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
+
         effects = {
             {
                 type = "unlock-recipe",
@@ -271,16 +273,27 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 }
             },
             time = 60,
         },
-    },{
+    }, {
         type = "technology",
         name = "igrys-rich-magic-teseract",
-        icon = "__Igrys__/Assets/Items/teseract.png",
-        
+        icons = {
+            {
+                icon = "__Igrys__/Assets/Technologies/teseract.png",
+                icon_size = 1024,
+            },
+            {
+                icon = "__Igrys__/Assets/Other/rich-icon.png",
+                scale = 0.25,
+                icon_size = 16,
+                shift = { 64, 64 }
+            }
+        },
+
         effects = {
             {
                 type = "unlock-recipe",
@@ -296,13 +309,13 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1},
-                {"igrys-mineral-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
             },
             time = 60,
         },
-    },{
+    }, {
         type = "technology",
         name = "igrys-strong-barrel",
         icon = "__Igrys__/Assets/Items/empty-barrel.png",
@@ -310,10 +323,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "igrys-strong-barrel"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-strong-barrel-filled-magic-fluid"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-empty-strong-barrel-filled-magic-fluid"
             }
@@ -327,22 +340,27 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1},
-                {"igrys-mineral-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
             },
             time = 60,
         }
-    },{
+    }, {
         type = "technology",
         name = "igrys-glass-space-rocket",
-        icon = data.raw["item"]["rocket-silo"].icon,
-        icon_size = data.raw["item"]["rocket-silo"].icon_size,
+        icons = {
+            {
+                icon = data.raw["item"]["rocket-silo"].icon,
+                icon_size = data.raw["item"]["rocket-silo"].icon_size,
+                tint = glassTint
+            }
+        },
         effects = {
             {
                 type = "unlock-recipe",
                 recipe = "igrys-glass-space-rocket"
-            },{
+            }, {
                 type = "unlock-recipe",
                 recipe = "igrys-glass-rocket-part"
             }
@@ -356,13 +374,13 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1},
-                { "igrys-mineral-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
             },
             time = 60,
         }
-    },{
+    }, {
         type = "technology",
         name = "igrys-science-enriching",
         icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
@@ -382,9 +400,9 @@ data:extend({
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
                 { "chemical-science-pack", 1 },
-                { "production-science-pack", 1},
-                { "metallurgic-science-pack", 1},
-                { "igrys-mineral-science-pack", 1}
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
             },
             time = 60,
         }

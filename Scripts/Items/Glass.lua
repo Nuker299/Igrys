@@ -3,7 +3,6 @@ local glass = {
         type="item",
         name="igrys-glass",
         icon = "__Igrys__/Assets/Items/glass.png",
-        icon_size = 1024,
         stack_size = 200,
         subgroup = "raw-material",
         weight = 20000

@@ -1,3 +1,5 @@
+glassTint = {r = 0.8, g = 1, b = 1, a = 0.6}
+
 local glassSpaceRocketEntity = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 glassSpaceRocketEntity.name = "igrys-glass-space-rocket"
 glassSpaceRocketEntity.minable.result = "igrys-glass-space-rocket"
@@ -6,7 +8,7 @@ glassSpaceRocketEntity.fixed_recipe = "igrys-glass-rocket-part"
 glassSpaceRocketEntity.icons = {
     {
         icon = glassSpaceRocketEntity.icon,
-        tint = {r = 0.8, g = 1, b = 1, a = 0.6}
+        tint = glassTint
     }
 }
 glassSpaceRocketEntity.icon = nil
@@ -17,7 +19,7 @@ glassSpaceRocketItem.place_result = "igrys-glass-space-rocket"
 glassSpaceRocketItem.icons = {
     {
         icon = glassSpaceRocketItem.icon,
-        tint = {r = 0.8, g = 1, b = 1, a = 0.6}
+        tint = glassTint
     }
 }
 glassSpaceRocketItem.icon = nil
@@ -40,7 +42,7 @@ glassRocketPartRecipe.name = "igrys-glass-rocket-part"
 glassRocketPartRecipe.icons = {
     {
         icon = "__base__/graphics/icons/rocket-part.png",
-        tint = {r = 0.8, g = 1, b = 1, a = 0.6}
+        tint = glassTint
     }
 }
 glassSpaceRocketRecipe.icon = nil
