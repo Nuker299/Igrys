@@ -9,8 +9,8 @@ PlanetsLib:extend({
                 type = "planet",
                 name = "vulcanus",
             },
-            distance = 10,
-            orientation = 0.85,
+            distance = 12,
+            orientation = 0.8,
         },
         subgroup = "planets",
         label_orientation = 0.55,
@@ -47,7 +47,7 @@ PlanetsLib:extend({
         draw_orbit = true,
         order = "e[gleba]-a[igrys]",
         pollutant_type = nil,
-        solar_power_in_space = 120,
+        solar_power_in_space = 1000,
         platform_procession_set = {
             arrival = { "planet-to-platform-b" },
             departure = { "platform-to-planet-a" },
@@ -59,9 +59,9 @@ PlanetsLib:extend({
         surface_properties = {
             ["day-night-cycle"] = 60 * 60 * 5,
             ["magnetic-field"] = 20, -- Fulgora is 99
-            ["solar-power"] = 100, -- No atmosphere
+            ["solar-power"] = 600, -- No atmosphere
             pressure = 2000,
-            gravity = 1, -- 0.1 is minimum for chests
+            gravity = 3,
         },
         asteroid_spawn_influence = 1,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora, 0.9),
@@ -90,7 +90,7 @@ data:extend({
         from = "gleba",
         to = "igrys",
         order = "e",
-        length = 30000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus),
     },
 })

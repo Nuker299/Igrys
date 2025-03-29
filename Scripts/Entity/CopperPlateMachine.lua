@@ -34,7 +34,7 @@ data:extend({
                 height = 256,
                 frame_count = 1,
                 line_length = 1,
-                scale = 0.1,
+                scale = 0.45,
             }
         },
     }, {
@@ -42,8 +42,8 @@ data:extend({
         name = "igrys-copper-plate-machine",
         icon = "__Igrys__/Assets/Entity/CopperPlateMachine.png",
         icon_size = 256,
-        
-        subgroup = "extraction-machine",
+
+        subgroup = "igrys-machine",
         
         weight = 1000000000,
         stack_size = 50,

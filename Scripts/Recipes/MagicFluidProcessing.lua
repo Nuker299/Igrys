@@ -18,10 +18,7 @@ data:extend({
         icon = "__Igrys__/Assets/Items/magic-fluid.png",
         icon_size = 1024,
         order = "a[magic-fluid-processing]"
-    }, {
-        type = "item-subgroup",
-        name = "igrys-magic",
-        group = "intermediate-products",
-        order = "m"
     }
 })
+
+PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-magic-fluid-processing"], "igrys")

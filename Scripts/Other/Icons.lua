@@ -1,5 +1,4 @@
 function RichIcons(icon)
-    icon.size = 1
     return{
         icon,
         {
@@ -14,7 +13,6 @@ end
 
 -- Can't get it to work
 --function MadeFromIcons(icon, madeFromIcon)
---    icon.size = 1
 --    madeFromIcon.size = 0.0005
 --    madeFromIcon.shift = {8, 8}
 --    return{

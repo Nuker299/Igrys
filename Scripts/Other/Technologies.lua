@@ -363,5 +363,31 @@ data:extend({
             },
             time = 60,
         }
+    },{
+        type = "technology",
+        name = "igrys-science-enriching",
+        icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
+        icon_size = 600,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "igrys-science-enhancer-machine"
+            } -- rest will be added in EnhancedSciencePacks.lua
+        },
+        prerequisites = {
+            "igrys-mineral-science",
+        },
+        unit = {
+            count = 1000,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1},
+                { "metallurgic-science-pack", 1},
+                { "igrys-mineral-science-pack", 1}
+            },
+            time = 60,
+        }
     }
 })

@@ -9,8 +9,5 @@ data:extend({
         },
         energy_required = 1.5,
         category = "igrys-making-stuff-out-of-thin-air"
-    }, {
-        type = "recipe-category",
-        name = "igrys-making-stuff-out-of-thin-air"
     }
 })

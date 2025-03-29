@@ -3,6 +3,7 @@ data:extend({
         type = "mining-drill",
         name = "igrys-magic-pumpjack",
         icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
+        icon_size = 256,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = "igrys-magic-pumpjack"},
         resource_categories = {"igrys-magic-fluid"},
@@ -69,7 +70,7 @@ data:extend({
             {
                 filename = "__Igrys__/Assets/Entity/MagicPumpjack.png",
                 size = 256,
-                scale = 0.1,
+                scale = 0.45,
                 frames = 1,
             }
         },
@@ -106,7 +107,7 @@ data:extend({
         icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
         icon_size = 256,
 
-        subgroup = "extraction-machine",
+        subgroup = "igrys-machine",
 
         weight = 1000000000,
         stack_size = 50,

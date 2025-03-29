@@ -9,6 +9,7 @@ data:extend{
         stack_size = 200,
         weight = 1 * kg,
         durability = 1,
+        auto_enrich = false
     }, {
         type = "recipe",
         name = "igrys-mineral-science-pack",

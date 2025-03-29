@@ -3,9 +3,9 @@ data:extend({
         type = "item",
         name = "igrys-strong-barrel",
         icon = "__Igrys__/Assets/Items/empty-barrel.png",
-        subgroup = "igrys-magic",
-        order = "f[igrys-strong-barrel]",
-        stack_size = 10,
+        subgroup = "igrys-barreling",
+        order = "a",
+        stack_size = 50,
         weight = 1 / 200 * tons,
     },{
         type = "recipe",
@@ -13,7 +13,7 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         ingredients = {
-            {type="item", name="igrys-glass", amount=1},
+            {type="item", name="igrys-glass", amount=10},
             {type="item", name="igrys-rich-magic-teseract", amount=1}
         },
         results = {
@@ -24,9 +24,9 @@ data:extend({
     }, {
         type = "item",
         name = "igrys-strong-barrel-filled-magic-fluid",
-        icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
-        subgroup = "igrys-magic",
-        order = "g[igrys-strong-barrel]",
+        icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
+        subgroup = "igrys-barreling",
+        order = "b",
         stack_size = 10,
         weight = 1 / 100 * tons,
     }, {
@@ -46,6 +46,7 @@ data:extend({
     }, {
         type = "recipe",
         name = "igrys-empty-strong-barrel-filled-magic-fluid",
+        subgroup = "igrys-barreling",
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = false,
         ingredients = {
@@ -57,7 +58,8 @@ data:extend({
         },
         energy_required = 1,
         category = "crafting-with-fluid",
-        icon = "__Igrys__/Assets/Items/empty-barrel.png", --TODO Add icon
+        icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
+        order = "c"
     }
 })
 

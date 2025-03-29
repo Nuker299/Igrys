@@ -13,6 +13,8 @@ data:extend{
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         energy_required = 3,
+        recipe_category = "advanced-crafting",
+        allow_as_intermediate = false
     }, {
         type = "recipe",
         name = "igrys-copper-rail",
@@ -25,6 +27,8 @@ data:extend{
         },
         results = {{type="item", name="rail", amount=1}},
         order = "a[rail]-b[igrys-copper-rail]",
+        recipe_category = "advanced-crafting",
+        allow_as_intermediate = false
     }, {
         type = "recipe",
         name = "igrys-sulfuric-acid",
@@ -43,6 +47,7 @@ data:extend{
             {type = "fluid", name = "sulfuric-acid", amount = 50}
         },
         allow_productivity = true,
+        allow_as_intermediate = false
     }, {
         type = "recipe",
         name = "igrys-plastic-bar",
@@ -60,6 +65,7 @@ data:extend{
             {type = "item", name = "plastic-bar", amount = 1}
         },
         allow_productivity = true,
+        allow_as_intermediate = false
     },
     {
         type = "recipe",
@@ -75,5 +81,6 @@ data:extend{
         },
         energy_required = 5,
         category = "chemistry",
+        allow_as_intermediate = false
     },
 }
