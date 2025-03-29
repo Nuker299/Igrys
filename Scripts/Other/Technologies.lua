@@ -233,6 +233,7 @@ data:extend({
         type = "technology",
         name = "igrys-glassworking-3",
         icon = "__Igrys__/Assets/Technologies/glassworking.png",
+        icon_size = 1024,
         effects = {
             {
                 type = "unlock-recipe",
@@ -288,9 +289,9 @@ data:extend({
             },
             {
                 icon = "__Igrys__/Assets/Other/rich-icon.png",
-                scale = 0.25,
+                scale = 2,
                 icon_size = 16,
-                shift = { 64, 64 }
+                shift = { 40, 40 }
             }
         },
 
@@ -406,5 +407,62 @@ data:extend({
             },
             time = 60,
         }
-    }
+    }, {
+        type = "technology",
+        name = "igrys-glass-productivity",
+        icon = "__Igrys__/Assets/Items/glass.png",
+        effects = {
+            {
+                type = "change-recipe-productivity",
+                recipe = "igrys-glass",
+                change = 0.1
+            },
+        },
+        prerequisites = { "igrys-glassworking-3", "igrys-mineral-science" },
+        unit = {
+            count_formula = "1.5^L*1000",
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
+            },
+            time = 60,
+        },
+        max_level = "infinite",
+        upgrade = true
+    }, {
+        type = "technology",
+        name = "igrys-copper-plate-productivity",
+        icon = data.raw["item"]["copper-plate"].icon,
+        effects = {
+            {
+                type = "change-recipe-productivity",
+                recipe = "copper-plate",
+                change = 0.1
+            }, {
+                type = "change-recipe-productivity",
+                recipe = "igrys-free-copper-plate",
+                change = 0.1,
+                hidden = true
+            },
+        },
+        prerequisites = { "igrys-mineral-science" },
+        unit = {
+            count_formula = "1.5^L*1000",
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
+            },
+            time = 60,
+        },
+        max_level = "infinite",
+        upgrade = true
+    },
 })

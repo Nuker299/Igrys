@@ -14,7 +14,7 @@ end
 function MadeFromIcons(iconFile, madeFromIconFile)
     icon = {icon = iconFile}
     madeFromIcon = {icon = madeFromIconFile}
-    madeFromIcon.scale = 0.5
+    madeFromIcon.scale = 0.4
     madeFromIcon.shift = {12, 12}
     return{
         icon,
@@ -25,8 +25,8 @@ end
 function MadeFromIconsTech(iconFile, madeFromIconFile)
     icon = {icon = iconFile}
     madeFromIcon = {icon = madeFromIconFile}
-    madeFromIcon.scale = 0.25
-    madeFromIcon.shift = {64, 64}
+    madeFromIcon.scale = 1
+    madeFromIcon.shift = {40, 40}
     return{
         icon,
         madeFromIcon
