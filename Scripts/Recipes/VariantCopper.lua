@@ -15,7 +15,8 @@ data:extend{
         allow_productivity = true,
         energy_required = 3,
         recipe_category = "advanced-crafting",
-        allow_as_intermediate = false
+        allow_as_intermediate = false,
+        auto_recycle = false
     }, {
         type = "recipe",
         name = "igrys-copper-rail",
@@ -30,7 +31,8 @@ data:extend{
         icons = MadeFromIcons("__base__/graphics/icons/rail.png", "__Igrys__/Assets/Items/conductive-brick.png"),
         order = "a[rail]-b[igrys-copper-rail]",
         recipe_category = "advanced-crafting",
-        allow_as_intermediate = false
+        allow_as_intermediate = false,
+        auto_recycle = false
     }, {
         type = "recipe",
         name = "igrys-sulfuric-acid",
@@ -50,7 +52,8 @@ data:extend{
         },
         icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
         allow_productivity = true,
-        allow_as_intermediate = false
+        allow_as_intermediate = false,
+        auto_recycle = false
     }, {
         type = "recipe",
         name = "igrys-plastic-bar",
@@ -69,7 +72,8 @@ data:extend{
         },
         icons = MadeFromIcons(data.raw["item"]["plastic-bar"].icon, "__Igrys__/Assets/Items/glass.png"),
         allow_productivity = true,
-        allow_as_intermediate = false
+        allow_as_intermediate = false,
+        auto_recycle = false
     },
     {
         type = "recipe",
@@ -77,7 +81,7 @@ data:extend{
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         ingredients = {
-            {type="fluid", name="light-oil", amount=20},
+            {type="fluid", name="light-oil", amount=50},
             {type="item", name="stone-brick", amount=5}
         },
         results = {
@@ -86,6 +90,7 @@ data:extend{
         icons = MadeFromIcons(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
         energy_required = 5,
         category = "chemistry",
-        allow_as_intermediate = false
+        allow_as_intermediate = false,
+        auto_recycle = false
     },
 }

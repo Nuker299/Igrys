@@ -58,7 +58,7 @@ data:extend{
                 name = "stone",
                 order = "b",
                 map_color = {0.690, 0.611, 0.427},
-                mining_time = 5,
+                mining_time = 7,
                 mining_visualisation_tint = {r = 0.984, g = 0.883, b = 0.646, a = 1.000}, -- #fae1a4ff
             },
             {

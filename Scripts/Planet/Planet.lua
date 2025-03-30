@@ -60,7 +60,7 @@ PlanetsLib:extend({
             ["day-night-cycle"] = 60 * 60 * 5,
             ["magnetic-field"] = 20, -- Fulgora is 99
             ["solar-power"] = 600, -- No atmosphere
-            pressure = 2000,
+            pressure = 3000,
             gravity = 3,
         },
         asteroid_spawn_influence = 1,

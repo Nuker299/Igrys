@@ -17,6 +17,7 @@ data:extend({
             {type = "item", name = "igrys-magic-teseract", amount = 1},
         },
         main_product = "igrys-magic-teseract",
+        auto_recycle = false,
     },{
         type = "recipe",
         name = "igrys-magic-teseract-2",
@@ -33,6 +34,7 @@ data:extend({
             {type = "item", name = "igrys-magic-teseract", amount = 1},
         },
         main_product = "igrys-magic-teseract",
+        auto_recycle = false,
     },{
         type = "recipe",
         name = "igrys-magic-teseract-3",
@@ -49,6 +51,7 @@ data:extend({
             {type = "item", name = "igrys-magic-teseract", amount = 1},
         },
         main_product = "igrys-magic-teseract",
+        auto_recycle = false,
     },{
         type = "recipe",
         name = "igrys-rich-magic-teseract",

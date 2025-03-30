@@ -67,8 +67,8 @@ local restrictedRecipe =
         },
         energy_required = 30,
         category = "advanced-crafting",
-        subgroup = "extraction-machine",
+        subgroup = "igrys-machine",
     }
 
 data:extend{restrictedRecipe}
-PlanetsLib.restrict_to_planet(restrictedRecipe, "igrys")
+PlanetsLib.restrict_to_planet(data.raw["assembling-machine"]["igrys-copper-plate-machine"], "igrys")

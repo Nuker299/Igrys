@@ -5,7 +5,7 @@ data:extend({
         icon = "__Igrys__/Assets/Items/empty-barrel.png",
         subgroup = "igrys-barreling",
         order = "a",
-        stack_size = 50,
+        stack_size = 10,
         weight = 1 / 200 * tons,
     },{
         type = "recipe",
