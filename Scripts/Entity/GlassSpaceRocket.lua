@@ -1,4 +1,5 @@
 glassTint = {r = 0.8, g = 1, b = 1, a = 0.6}
+local rocket_shift = 48
 
 local glassSpaceRocketEntity = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 glassSpaceRocketEntity.name = "igrys-glass-space-rocket"
@@ -12,6 +13,32 @@ glassSpaceRocketEntity.icons = {
     }
 }
 glassSpaceRocketEntity.icon = nil
+glassSpaceRocketEntity.door_back_sprite.filename = "__Igrys__/Assets/Entity/GlassSpaceRocket/04-door-back.png"
+glassSpaceRocketEntity.door_front_sprite.filename = "__Igrys__/Assets/Entity/GlassSpaceRocket/05-door-front.png"
+glassSpaceRocketEntity.base_day_sprite.filename = "__Igrys__/Assets/Entity/GlassSpaceRocket/06-rocket-silo.png"
+glassSpaceRocketEntity.base_front_sprite.filename = "__Igrys__/Assets/Entity/GlassSpaceRocket/14-rocket-silo-front.png"
+glassSpaceRocketEntity.base_front_sprite.filename = "__Igrys__/Assets/Entity/GlassSpaceRocket/14-rocket-silo-front.png"
+--glassSpaceRocketEntity.rocket_entity = "igrys-glass-rocket-silo-rocket"
+--
+--local glassRocketSiloRocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
+--glassRocketSiloRocket.name = "igrys-glass-rocket-silo-rocket"
+--glassRocketSiloRocket.layers =
+--{
+--    util.sprite_load("__Igrys__/Assets/Entity/GlassSpaceRocket/rocket-static-pod",
+--            {
+--                dice_y = 4,
+--                shift = util.by_pixel( 0, 17.0+rocket_shift),
+--                scale = 0.5
+--            }),
+--    util.sprite_load("__base__/graphics/entity/rocket-silo/rocket-static-emission",
+--            {
+--                dice_y = 4,
+--                shift = util.by_pixel( 0, 17+rocket_shift),
+--                draw_as_glow = true,
+--                blend_mode = "additive",
+--                scale = 0.5
+--            })
+--}
 
 local glassSpaceRocketItem = table.deepcopy(data.raw["item"]["rocket-silo"])
 glassSpaceRocketItem.name = "igrys-glass-space-rocket"
