@@ -5,5 +5,5 @@
   "author": "You",
   "factorio_version": "2.0",
   "dependencies": ["base >= 2.0", "space-age >= 1.0", "PlanetsLib >= 1.2"],
-  "description": "My New Planet"
+  "description": "Igrys – A new planet with magic-powered science, advanced glassworking, and alternative production chains"
 }

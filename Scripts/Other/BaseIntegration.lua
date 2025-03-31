@@ -25,3 +25,4 @@ table.insert(data.raw["technology"]["rocket-part-productivity"].effects, {
 
 -- Igrys Water
 table.insert(data.raw["mining-drill"]["pumpjack"].resource_categories, "igrys-water")
+data.raw["fluid"]["water"].fuel_value = "1J"

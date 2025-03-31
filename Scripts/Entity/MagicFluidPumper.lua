@@ -33,7 +33,6 @@ data:extend({
                 }
             },
             burns_fluid = true,
-            fluid_usage_per_tick = 1,
             scale_fluid_usage = true
         },
         output_fluid_box =
@@ -54,7 +53,8 @@ data:extend({
             }
         },
         energy_usage = "60W",
-        mining_speed = 1,
+        mining_speed = 2,
+        effect_receiver = { base_effect = { productivity = 1 } },
         resource_searching_radius = 0.49,
         vector_to_place_result = {0, 0},
         module_slots = 2,
