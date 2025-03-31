@@ -159,8 +159,6 @@ data:extend{
                     probability = 1
                 },
             },
-            required_fluid = "water",
-            fluid_amount = 500
         },
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
@@ -192,11 +190,15 @@ data:extend{
         map_grid = false
     },
     {
+        type = "resource-category",
+        name = "igrys-water"
+    },
+    {
         type = "resource",
         name = "igrys-water",
         icon = "__base__/graphics/icons/crude-oil-resource.png",
         flags = {"placeable-neutral"},
-        category = "basic-fluid",
+        category = "igrys-water",
         subgroup = "mineable-fluids",
         order="a-b-a",
         infinite = true,

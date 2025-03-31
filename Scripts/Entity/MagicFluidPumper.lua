@@ -6,7 +6,7 @@ data:extend({
         icon_size = 256,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = "igrys-magic-pumpjack"},
-        resource_categories = {"igrys-magic-fluid"},
+        resource_categories = {"basic-fluid", "igrys-magic-fluid"},
         max_health = 200,
         corpse = "pumpjack-remnants",
         dying_explosion = "pumpjack-explosion",
@@ -14,9 +14,27 @@ data:extend({
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         energy_source =
         {
-            type = "electric",
-            emissions_per_minute = { pollution = 10 },
-            usage_priority = "secondary-input"
+            type = "fluid",
+            fluid_box = {
+                volume = 1000,
+                pipe_covers = pipecoverspictures(),
+                filter = "water",
+                pipe_connections =
+                {
+                    {
+                        direction = defines.direction.west,
+                        position = {-1, 0},
+                        flow_direction = "input",
+                    }, {
+                        direction = defines.direction.east,
+                        position = {1, 0},
+                        flow_direction = "input"
+                    }
+                }
+            },
+            burns_fluid = true,
+            fluid_usage_per_tick = 1,
+            scale_fluid_usage = true
         },
         output_fluid_box =
         {
@@ -35,24 +53,7 @@ data:extend({
                 }
             }
         },
-        input_fluid_box =
-        {
-            volume = 1000,
-            pipe_covers = pipecoverspictures(),
-            pipe_connections =
-            {
-                {
-                    direction = defines.direction.west,
-                    position = {-1, 0},
-                    flow_direction = "input",
-                }, {
-                    direction = defines.direction.east,
-                    position = {1, 0},
-                    flow_direction = "input"
-                }
-            }
-        },
-        energy_usage = "90kW",
+        energy_usage = "60W",
         mining_speed = 1,
         resource_searching_radius = 0.49,
         vector_to_place_result = {0, 0},
@@ -122,7 +123,8 @@ local restrictedRecipe =
     icon_size = 256,
     enabled = settings.startup["igrys-enable-all"].value,
     ingredients = {
-        {type="item", name="igrys-glass", amount=10},
+        {type="fluid", name="water", amount=100},
+        {type="item", name="copper-plate", amount=20},
         {type="item", name="steel-plate", amount=20},
         {type="item", name="igrys-conductive-brick", amount=50},
     },
@@ -130,9 +132,9 @@ local restrictedRecipe =
         {type="item", name="igrys-magic-pumpjack", amount=1},
     },
     energy_required = 30,
-    category = "advanced-crafting",
+    category = "crafting-with-fluid",
     subgroup = "igrys-machine",
 }
 
 data:extend{restrictedRecipe}
-PlanetsLib.restrict_to_planet(data.raw["mining-drill"]["igrys-magic-pumpjack"], "igrys")
+--PlanetsLib.restrict_to_planet(restrictedRecipe, "igrys")
