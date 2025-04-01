@@ -5,7 +5,11 @@ local function CreateRecipe(recipe, sciencePack)
     newRecipe.name = "igrys-" .. recipe.name .. "-enhanced"
     newRecipe.category = "enriched-science-pack"
     newRecipe.enabled = settings.startup["igrys-enable-all"].value
-    newRecipe.icons = RichIcons({icon = sciencePack.icon})
+    local icon = {icon = sciencePack.icon}
+    if not sciencePack.icon then
+        icon = sciencePack.icons[1]
+    end
+    newRecipe.icons = RichIcons(icon)
     newRecipe.subgroup = "igrys-enriched-science-pack"
     newRecipe.auto_recycle = false
     newRecipe.hidden_in_factoriopedia = true
@@ -34,6 +38,7 @@ local function CreateRecipe(recipe, sciencePack)
         },
     }
 
+    newRecipe.ingredients = newRecipe.ingredients or {}
     table.insert(newRecipe.ingredients, {type = "fluid", name = "igrys-magic-fluid", amount = 2})
 
     data:extend{newRecipe, newTech}

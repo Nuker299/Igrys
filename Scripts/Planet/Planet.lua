@@ -35,12 +35,12 @@ PlanetsLib:extend({
                         ["igrys-magic-fluid"] = {},
                     }
                 },
-                ["decorative"] = {
-                    settings = {
-                        ["medium-sand-rock"] = {},
-                        ["small-sand-rock"] = {},
-                    }
-                }
+                --["decorative"] = {
+                --    settings = {
+                --        ["medium-sand-rock"] = {},
+                --        ["small-sand-rock"] = {},
+                --    }
+                --}
             }
         },
         gravity_pull = 1,
