@@ -1,3 +1,8 @@
+Version: 1.0.2
+Date: 2025-04-2
+  Compatibility:
+    - Added setting to integrate with modded science packs
+      By default the mod will only enrich vanilla and Igrys's science packs
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2025-04-1

@@ -48,33 +48,54 @@ end
 local items = data.raw["tool"]
 local sciencePacks = {} -- This will be a list (array)
 
--- Collect all science pack names into a list
-for name, item in pairs(items) do
-    if item.subgroup == "science-pack" then
-        if (item.auto_enrich == false) then
-            log("Auto enrich false for " .. item.name)
-        else
-            log("Found science pack " .. item.name)
-            table.insert(sciencePacks, item) -- Store the full item object
+if not settings.startup["igrys-enhance-modded-science-packs"] then
+    -- Vanilla Recipes
+    CreateRecipe(data.raw["recipe"]["automation-science-pack"], data.raw["tool"]["automation-science-pack"])
+    CreateRecipe(data.raw["recipe"]["logistic-science-pack"], data.raw["tool"]["logistic-science-pack"])
+    CreateRecipe(data.raw["recipe"]["chemical-science-pack"], data.raw["tool"]["chemical-science-pack"])
+    CreateRecipe(data.raw["recipe"]["military-science-pack"], data.raw["tool"]["military-science-pack"])
+    CreateRecipe(data.raw["recipe"]["production-science-pack"], data.raw["tool"]["production-science-pack"])
+    CreateRecipe(data.raw["recipe"]["utility-science-pack"], data.raw["tool"]["utility-science-pack"])
+    CreateRecipe(data.raw["recipe"]["space-science-pack"], data.raw["tool"]["space-science-pack"])
+    CreateRecipe(data.raw["recipe"]["metallurgic-science-pack"], data.raw["tool"]["metallurgic-science-pack"])
+    CreateRecipe(data.raw["recipe"]["agricultural-science-pack"], data.raw["tool"]["agricultural-science-pack"])
+    CreateRecipe(data.raw["recipe"]["electromagnetic-science-pack"], data.raw["tool"]["electromagnetic-science-pack"])
+    CreateRecipe(data.raw["recipe"]["cryogenic-science-pack"], data.raw["tool"]["cryogenic-science-pack"])
+    CreateRecipe(data.raw["recipe"]["promethium-science-pack"], data.raw["tool"]["promethium-science-pack"])
+    
+    -- Modded Recipes
+    CreateRecipe(data.raw["recipe"]["igrys-production-science-pack"], data.raw["tool"]["production-science-pack"])
+    CreateRecipe(data.raw["recipe"]["igrys-automation-science-pack"], data.raw["tool"]["automation-science-pack"])
+    CreateRecipe(data.raw["recipe"]["igrys-mineral-science-pack"], data.raw["tool"]["igrys-mineral-science-pack"])
+else
+    -- Collect all science pack names into a list
+    for name, item in pairs(items) do
+        if item.subgroup == "science-pack" then
+            if (item.auto_enrich == false) then
+                log("Auto enrich false for " .. item.name)
+            else
+                log("Found science pack " .. item.name)
+                table.insert(sciencePacks, item) -- Store the full item object
+            end
         end
     end
-end
 
--- Iterate through each science pack
-for _, sciencePack in ipairs(sciencePacks) do
-    log("Science pack name: " .. sciencePack.name)
-    for _, recipe in pairs(data.raw["recipe"]) do
-        if recipe.auto_enrich == false or recipe.category == "recycling" then
-        else
-            if recipe.results then
-                for _, result in ipairs(recipe.results) do
-                    --log("Result name: " .. result.name)
-                    if result.name == sciencePack.name then
-                        log("Found recipe " .. recipe.name .. " that produces " .. sciencePack.name)
-                        CreateRecipe(recipe, sciencePack)
+    -- Iterate through each science pack
+    for _, sciencePack in ipairs(sciencePacks) do
+        log("Science pack name: " .. sciencePack.name)
+        for _, recipe in pairs(data.raw["recipe"]) do
+            if recipe.auto_enrich == false or recipe.category == "recycling" then
+            else
+                if recipe.results then
+                    for _, result in ipairs(recipe.results) do
+                        --log("Result name: " .. result.name)
+                        if result.name == sciencePack.name then
+                            log("Found recipe " .. recipe.name .. " that produces " .. sciencePack.name)
+                            CreateRecipe(recipe, sciencePack)
+                        end
                     end
                 end
             end
         end
     end
-end
+end 
