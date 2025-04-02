@@ -45,8 +45,6 @@ local function CreateRecipe(recipe, sciencePack)
     log("New enriched recipe added for " .. recipe.name)
 end
 
-local items = data.raw["tool"]
-local sciencePacks = {} -- This will be a list (array)
 
 if not settings.startup["igrys-enhance-modded-science-packs"] then
     -- Vanilla Recipes
@@ -68,6 +66,8 @@ if not settings.startup["igrys-enhance-modded-science-packs"] then
     CreateRecipe(data.raw["recipe"]["igrys-automation-science-pack"], data.raw["tool"]["automation-science-pack"])
     CreateRecipe(data.raw["recipe"]["igrys-mineral-science-pack"], data.raw["tool"]["igrys-mineral-science-pack"])
 else
+    local items = data.raw["tool"]
+    local sciencePacks = {} -- This will be a list (array)
     -- Collect all science pack names into a list
     for name, item in pairs(items) do
         if item.subgroup == "science-pack" then
