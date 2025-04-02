@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-04-2
+  Features:
+    - Copper Machines work only at night
+    - New Ruins can be found on the planet
+  Changes:
+    - Made Copper Machines faster to compensate for the night-only operation
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2025-04-2
   Compatibility:
