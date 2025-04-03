@@ -110,7 +110,7 @@ data:extend({
 
         subgroup = "igrys-machine",
 
-        weight = 1000000000,
+        weight = kg * 50,
         stack_size = 50,
         place_result = "igrys-magic-pumpjack"
     },
@@ -137,4 +137,4 @@ local restrictedRecipe =
 }
 
 data:extend{restrictedRecipe}
---PlanetsLib.restrict_to_planet(restrictedRecipe, "igrys")
+PlanetsLib.set_default_import_location("igrys-magic-pumpjack", "igrys")

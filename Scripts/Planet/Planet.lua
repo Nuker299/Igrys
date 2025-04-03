@@ -15,9 +15,9 @@ PlanetsLib:extend({
         subgroup = "planets",
         label_orientation = 0.55,
         icon = "__Igrys__/Assets/igrys.png",
-        icon_size = 256,
+        icon_size = 500,
         starmap_icon = "__Igrys__/Assets/igrys.png",
-        starmap_icon_size = 256,
+        starmap_icon_size = 500,
         map_gen_settings = {
             autoplace_settings = {
                 ["tile"] = {

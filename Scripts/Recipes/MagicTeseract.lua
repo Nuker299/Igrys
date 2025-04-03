@@ -18,6 +18,7 @@ data:extend({
         },
         main_product = "igrys-magic-teseract",
         auto_recycle = false,
+        icons = MadeFromIcons("__Igrys__/Assets/Items/teseract.png", "__Igrys__/Assets/Items/magic-part-1.png"),
     },{
         type = "recipe",
         name = "igrys-magic-teseract-2",
@@ -35,6 +36,7 @@ data:extend({
         },
         main_product = "igrys-magic-teseract",
         auto_recycle = false,
+        icons = MadeFromIcons("__Igrys__/Assets/Items/teseract.png", "__Igrys__/Assets/Items/magic-part-2.png"),
     },{
         type = "recipe",
         name = "igrys-magic-teseract-3",
@@ -52,6 +54,7 @@ data:extend({
         },
         main_product = "igrys-magic-teseract",
         auto_recycle = false,
+        icons = MadeFromIcons("__Igrys__/Assets/Items/teseract.png", "__Igrys__/Assets/Items/magic-part-3.png"),
     },{
         type = "recipe",
         name = "igrys-rich-magic-teseract",

@@ -47,7 +47,7 @@ glassSpaceRocketRecipe.ingredients = {
     {type="item", name="igrys-glass", amount=1000},
     {type="item", name="steel-plate", amount=1000},
     {type="item", name="electric-engine-unit", amount=200},
-    {type="item", name="igrys-rich-magic-teseract", amount=10},
+    {type="item", name="igrys-rich-magic-teseract", amount=20},
     {type="item", name="igrys-conductive-brick", amount=200}
 }
 glassSpaceRocketRecipe.main_product = "igrys-glass-space-rocket"

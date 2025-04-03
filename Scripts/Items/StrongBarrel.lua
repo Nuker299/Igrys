@@ -65,4 +65,4 @@ data:extend({
 
 PlanetsLib.set_default_import_location("igrys-strong-barrel", "igrys")
 PlanetsLib.set_default_import_location("igrys-strong-barrel-filled-magic-fluid", "igrys")
-PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-strong-barrel"], "igrys")
+--PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-strong-barrel"], "igrys")

@@ -48,8 +48,8 @@ data:extend({
         icon_size = 256,
 
         subgroup = "igrys-machine",
-        
-        weight = 1000000000,
+
+        weight = kg * 50,
         stack_size = 50,
         place_result = "igrys-copper-plate-machine"
     }, 

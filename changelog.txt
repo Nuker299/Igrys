@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-04-3
+  Changes:
+    - Rebalanced recipes with rich teseract as an ingredient
+  Tweaks:
+    - Added new planet icon in better resolution 
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2025-04-2
   Features:

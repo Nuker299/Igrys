@@ -28,4 +28,4 @@ for i, prereq in ipairs(recipe.ingredients) do
     end
 end
 
-table.insert(recipe.ingredients, {type="item", name="igrys-rich-magic-teseract", amount=20})
+table.insert(recipe.ingredients, {type="item", name="igrys-rich-magic-teseract", amount=2e0})

@@ -79,7 +79,7 @@ data:extend{
         {
             {type="item", name="processing-unit", amount=25},
             {type="item", name="igrys-glass", amount=100},
-            {type="item", name="igrys-rich-magic-teseract", amount=2},
+            {type="item", name="igrys-rich-magic-teseract", amount=5},
             {type="item", name="lab", amount=2}
         },
         results=
@@ -91,3 +91,4 @@ data:extend{
 }
 
 -- Todo add circuit network support
+PlanetsLib.set_default_import_location("igrys-science-enhancer-machine", "igrys")
