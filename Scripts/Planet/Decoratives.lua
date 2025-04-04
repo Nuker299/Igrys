@@ -36,14 +36,11 @@ data:extend{
         },
         autoplace =
         {
-            control = "rocks", 
-            order = "a[doodad]-a[rock]-a[huge]",
-            probability_expression = "multiplier * control * (region_box + rock_density - penalty)",
+            probability_expression = "multiplier * control * (rock_density - penalty)",
             local_expressions =
             {
                 multiplier = 0.03,
                 penalty = 1.7,
-                region_box = "range_select_base(moisture, 0.35, 1, 0.2, -10, 0)",
                 control = "control:rocks:size",
             }
         },
