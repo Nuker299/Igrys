@@ -206,13 +206,14 @@ data:extend({
         },
     }, {
         type = "technology",
-        name = "igrys-steel-plate",
-        icons = MadeFromIconsTech(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
-
+        name = "igrys-cermet",
+        icon = "__Igrys__/Assets/Technologies/cermet.png",
+        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "igrys-steel-plate"
+                recipe = "igrys-cermet"
             }
         },
         prerequisites = {

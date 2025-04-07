@@ -20,6 +20,7 @@ require("Scripts.Items.Glass")
 require("Scripts.Items.MagicTeseract")
 require("Scripts.Items.MagicParts")
 require("Scripts.Items.StrongBarrel")
+require("Scripts.Items.Cermet")
 
 require("Scripts.Fluids.MagicFluid")
 
