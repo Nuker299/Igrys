@@ -181,38 +181,14 @@ data:extend({
         essential = true,
     }, {
         type = "technology",
-        name = "igrys-production-science",
-        icons = MadeFromIconsTech(data.raw["tool"]["production-science-pack"].icon, data.raw["item"]["stone-furnace"].icon),
-
+        name = "igrys-cermet",
+        icon = "__Igrys__/Assets/Technologies/cermet.png",
+        icon_size = 1024,
+        
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "igrys-production-science-pack"
-            }
-        },
-        prerequisites = {
-            "igrys-conductive-brick-usage",
-        },
-        unit = {
-            count = 500,
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
-                { "production-science-pack", 1 },
-                { "metallurgic-science-pack", 1 }
-            },
-            time = 60,
-        },
-    }, {
-        type = "technology",
-        name = "igrys-steel-plate",
-        icons = MadeFromIconsTech(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
-
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "igrys-steel-plate"
+                recipe = "igrys-cermet"
             }
         },
         prerequisites = {
@@ -257,7 +233,7 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-sulfuric-acid",
-        icons = MadeFromIconsTech(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
+        icons = MadeFromIconsTech(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/cermet.png"),
 
         effects = {
             {
@@ -266,7 +242,7 @@ data:extend({
             }
         },
         prerequisites = {
-            "planet-discovery-igrys",
+            "igrys-cermet",
         },
         unit = {
             count = 500,

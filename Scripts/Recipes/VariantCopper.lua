@@ -14,7 +14,7 @@ data:extend{
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         energy_required = 3,
-        recipe_category = "advanced-crafting",
+        recipe_category = "electronics",
         allow_as_intermediate = false,
         auto_recycle = false
     }, {
@@ -37,12 +37,12 @@ data:extend{
         type = "recipe",
         name = "igrys-sulfuric-acid",
         enabled = settings.startup["igrys-enable-all"].value,
-        category = "chemistry",
+        category = "chemistry-or-cryogenics",
         subgroup = "fluid-recipes",
         energy_required = 1,
         ingredients =
         {
-            {type = "item", name = "igrys-conductive-brick", amount = 5},
+            {type = "item", name = "igrys-cermet", amount = 5},
             {type = "fluid", name = "water", amount = 100},
             {type = "fluid", name = "light-oil", amount = 100}
         },
@@ -50,14 +50,14 @@ data:extend{
         {
             {type = "fluid", name = "sulfuric-acid", amount = 50}
         },
-        icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
+        icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/cermet.png"),
         allow_productivity = true,
         allow_as_intermediate = false,
         auto_recycle = false
     }, {
         type = "recipe",
         name = "igrys-plastic-bar",
-        category = "chemistry",
+        category = "chemistry-or-cryogenics",
         energy_required = 1,
         enabled = settings.startup["igrys-enable-all"].value,
         auto_recycle = false,
@@ -74,23 +74,5 @@ data:extend{
         allow_productivity = true,
         allow_as_intermediate = false,
         auto_recycle = false
-    },
-    {
-        type = "recipe",
-        name = "igrys-steel-plate",
-        enabled = settings.startup["igrys-enable-all"].value,
-        allow_productivity = true,
-        ingredients = {
-            {type="fluid", name="light-oil", amount=50},
-            {type="item", name="stone-brick", amount=5}
-        },
-        results = {
-            {type="item", name="steel-plate", amount=1},
-        },
-        icons = MadeFromIcons(data.raw["item"]["steel-plate"].icon, data.raw["item"]["stone-brick"].icon),
-        energy_required = 5,
-        category = "chemistry",
-        allow_as_intermediate = false,
-        auto_recycle = false
-    },
+    }
 }
