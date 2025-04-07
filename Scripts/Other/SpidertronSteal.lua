@@ -1,4 +1,4 @@
-if setting.startup["igrys-steal-spidertron"].value then
+if settings.startup["igrys-steal-spidertron"].value then
     local tech = data.raw["technology"]["spidertron"]
 
     for i, prereq in ipairs(tech.prerequisites) do

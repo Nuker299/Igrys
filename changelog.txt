@@ -1,10 +1,17 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.2
+Version: 1.2.0
 Date: 2025-04-7
+  Features:
+    - New Cermet resource, which spoils into steel plates
+  Changes:
+    - Removed the steel plate recipe, now can be acquired through cermet
+    - Sulfuric acid requires cermet instead of steel plates
+    - Removed alternative recipe production science recipe, realized that it can be made normally:)
   Bugfixes:
     - Fixed planet tech icon
   Tweaks:
     - Optional spidertron steal setting
+    - Added the use of cryogenic plant for alternative plastic and sulfur
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2025-04-3
