@@ -3,6 +3,8 @@ Version: 1.1.2
 Date: 2025-04-7
   Bugfixes:
     - Fixed planet tech icon
+  Tweaks:
+    - Optional spidertron steal setting
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2025-04-3
