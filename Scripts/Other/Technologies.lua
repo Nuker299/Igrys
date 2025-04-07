@@ -233,7 +233,7 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-sulfuric-acid",
-        icons = MadeFromIconsTech(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
+        icons = MadeFromIconsTech(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/cermet.png"),
 
         effects = {
             {
@@ -242,7 +242,7 @@ data:extend({
             }
         },
         prerequisites = {
-            "planet-discovery-igrys",
+            "igrys-cermet",
         },
         unit = {
             count = 500,

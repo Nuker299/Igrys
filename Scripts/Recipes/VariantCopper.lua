@@ -42,7 +42,7 @@ data:extend{
         energy_required = 1,
         ingredients =
         {
-            {type = "item", name = "igrys-conductive-brick", amount = 5},
+            {type = "item", name = "igrys-cermet", amount = 5},
             {type = "fluid", name = "water", amount = 100},
             {type = "fluid", name = "light-oil", amount = 100}
         },
@@ -50,7 +50,7 @@ data:extend{
         {
             {type = "fluid", name = "sulfuric-acid", amount = 50}
         },
-        icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/conductive-brick.png"),
+        icons = MadeFromIcons(data.raw["fluid"]["sulfuric-acid"].icon, "__Igrys__/Assets/Items/cermet.png"),
         allow_productivity = true,
         allow_as_intermediate = false,
         auto_recycle = false
