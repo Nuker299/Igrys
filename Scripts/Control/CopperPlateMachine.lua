@@ -4,10 +4,13 @@ script.on_init(function()
     storage.on = true
 end)
 
-script.on_event(defines.events.on_built_entity,
-        function(event)
-            event.entity.active = storage.on
-        end,
+function OnEntityBuild (event)
+    event.entity.active = storage.on
+end
+
+script.on_event(defines.events.on_built_entity, OnEntityBuild,
+        {{filter = "name", name = "igrys-copper-plate-machine"}})
+script.on_event(defines.events.on_robot_built_entity, OnEntityBuild,
         {{filter = "name", name = "igrys-copper-plate-machine"}})
 
 function Turn(on)

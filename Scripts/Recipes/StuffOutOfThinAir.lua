@@ -3,7 +3,7 @@ data:extend({
         type = "recipe",
         name = "igrys-free-copper-plate",
         hidden = true,
-        enabled = settings.startup["igrys-enable-all"].value,
+        enabled = true,
         results = {
             {type="item", name="copper-plate", amount=1},
         },
