@@ -20,7 +20,7 @@ data:extend({
         group = "production",
         order = "z"
     }, {
-        name = "enriched-science-pack",
+        name = "igrys-enriched-science-pack",
         type = "recipe-category"
     }, {
         type = "recipe-category",

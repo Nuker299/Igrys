@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-04-9
+  Bugfixes:
+    - New improved enriched science pack recipe unlocking method, fixes issues with the recipes not unlocking properly
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 2025-04-8
   Bugfixes:

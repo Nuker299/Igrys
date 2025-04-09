@@ -51,7 +51,7 @@ data:extend{
              }
          },
          crafting_speed = 5,
-         crafting_categories = {"enriched-science-pack"},
+         crafting_categories = {"igrys-enriched-science-pack"},
          energy_source = {
              type = "electric",
              usage_priority = "secondary-input",
