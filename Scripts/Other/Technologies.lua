@@ -189,6 +189,9 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "igrys-cermet"
+            }, {
+                type = "unlock-recipe",
+                recipe = "igrys-raw-cermite"
             }
         },
         prerequisites = {
@@ -279,6 +282,7 @@ data:extend({
         },
         prerequisites = {
             "igrys-mineral-science",
+            "igrys-cermet"
         },
         unit = {
             count = 250,

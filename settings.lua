@@ -3,7 +3,8 @@ data:extend({
         type = "bool-setting",
         name = "igrys-enable-all",
         setting_type = "startup",
-        default_value = false
+        default_value = false,
+        hidden = true
     }, {
         type = "bool-setting",
         name = "igrys-enhance-modded-science-packs",

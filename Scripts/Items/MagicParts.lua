@@ -8,7 +8,7 @@ data:extend({
         
         subgroup = "igrys-magic",
         order = "b[igrys-magic-part-1]",
-        stack_size = 100,
+        stack_size = 1,
         weight = 1000 * 10
     },
     {
@@ -18,7 +18,7 @@ data:extend({
         
         subgroup = "igrys-magic",
         order = "b[igrys-magic-part-2]",
-        stack_size = 100,
+        stack_size = 1,
         weight = 1000 * 10
     },
     {
@@ -28,7 +28,7 @@ data:extend({
         
         subgroup = "igrys-magic",
         order = "b[igrys-magic-part-3]",
-        stack_size = 100,
+        stack_size = 1,
         weight = 1000 * 10
     },{
         type = "item",
@@ -39,7 +39,7 @@ data:extend({
         }),
         subgroup = "igrys-magic",
         order = "d[igrys-magic-part-1]",
-        stack_size = 20,
+        stack_size = 1,
         weight = 1000 * 50
     },
     {
@@ -51,7 +51,7 @@ data:extend({
         }),
         subgroup = "igrys-magic",
         order = "d[igrys-magic-part-2]",
-        stack_size = 20,
+        stack_size = 1,
         weight = 1000 * 50
     },
     {
@@ -63,7 +63,7 @@ data:extend({
         }),
         subgroup = "igrys-magic",
         order = "d[igrys-magic-part-3]",
-        stack_size = 20,
+        stack_size = 1,
         weight = 1000 * 50
     }
 })

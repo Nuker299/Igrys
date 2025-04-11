@@ -3,10 +3,10 @@ data:extend{
         type = "item",
         name = "igrys-conductive-brick",
         icon = "__Igrys__/Assets/Items/conductive-brick.png",
-        
         stack_size = 200,
-        subgroup = "intermediate-product",
-        weight = 1000 * 5
+        subgroup = "igrys-material",
+        weight = 1000 * 5,
+        order = "b"
     },
     {
         type = "recipe",

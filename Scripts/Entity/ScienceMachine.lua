@@ -78,7 +78,7 @@ data:extend{
         ingredients =
         {
             {type="item", name="processing-unit", amount=25},
-            {type="item", name="igrys-glass", amount=100},
+            {type="item", name="igrys-conductive-brick", amount=100},
             {type="item", name="igrys-rich-magic-teseract", amount=5},
             {type="item", name="lab", amount=2}
         },

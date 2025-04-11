@@ -13,7 +13,7 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         ingredients = {
-            {type="item", name="igrys-glass", amount=10},
+            {type="item", name="igrys-cermite", amount=5},
             {type="item", name="igrys-rich-magic-teseract", amount=1}
         },
         results = {

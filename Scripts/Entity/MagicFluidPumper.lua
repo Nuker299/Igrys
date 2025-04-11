@@ -124,7 +124,6 @@ local restrictedRecipe =
     enabled = settings.startup["igrys-enable-all"].value,
     ingredients = {
         {type="fluid", name="water", amount=100},
-        {type="item", name="copper-plate", amount=20},
         {type="item", name="steel-plate", amount=20},
         {type="item", name="igrys-conductive-brick", amount=50},
     },

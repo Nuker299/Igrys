@@ -4,8 +4,9 @@ local glass = {
         name="igrys-glass",
         icon = "__Igrys__/Assets/Items/glass.png",
         stack_size = 200,
-        subgroup = "raw-material",
-        weight = 20000
+        subgroup = "igrys-material",
+        weight = 20000,
+        order = "a"
     }
     
     local glassRecipe = {

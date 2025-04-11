@@ -1,24 +1,30 @@
 data:extend({
     {
         type = "item-subgroup",
+        name = "igrys-material",
+        group = "intermediate-products",
+        order = "oaaa"
+    },
+    {
+        type = "item-subgroup",
         name = "igrys-magic",
         group = "intermediate-products",
-        order = "na"
+        order = "oaab"
     }, {
         type = "item-subgroup",
         name = "igrys-barreling",
         group = "intermediate-products",
-        order = "nb"
+        order = "oaac"
     }, {
         type = "item-subgroup",
         name = "igrys-enriched-science-pack",
         group = "intermediate-products",
-        order = "z"
+        order = "yc"
     }, {
         type = "item-subgroup",
         name = "igrys-machine",
         group = "production",
-        order = "z"
+        order = "g"
     }, {
         name = "igrys-enriched-science-pack",
         type = "recipe-category"
