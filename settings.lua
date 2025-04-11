@@ -15,5 +15,10 @@ data:extend({
         name = "igrys-steal-spidertron",
         setting_type = "startup",
         default_value = true
+    }, {
+        type = "bool-setting",
+        name = "igrys-keep-diagonal-inserter-base",
+        setting_type = "startup",
+        default_value = false
     }
 })
