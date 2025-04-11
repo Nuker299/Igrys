@@ -387,6 +387,33 @@ data:extend({
             },
             time = 60,
         }
+    },{
+        type = "technology",
+        name = "igrys-diagonal-inserter",
+        icon = data.raw["item"]["diagonal-inserter"].icon,
+        icon_size = data.raw["item"]["diagonal-inserter"].icon_size,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "diagonal-inserter"
+            }
+        },
+        prerequisites = {
+            "igrys-mineral-science",
+            "igrys-cermet"
+        },
+        unit = {
+            count = 500,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 },
+                { "metallurgic-science-pack", 1 },
+                { "igrys-mineral-science-pack", 1 }
+            },
+            time = 60,
+        }
     }, {
         type = "technology",
         name = "igrys-glass-productivity",
