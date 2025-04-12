@@ -8,7 +8,7 @@ data:extend{
          minable = { mining_time = 0.1, result = "igrys-science-enhancer-machine" },
          max_health = 500,
          heating_energy = "100kW",
-         effect_receiver = { base_effect = { productivity = 1 } },
+         effect_receiver = { base_effect = { productivity = 1.5 } },
          collision_box = { { -1.7, -1.7 }, { 1.7, 1.7 } },
          selection_box = { { -2, -2 }, { 2, 2 } },
          fluid_boxes = {
@@ -91,4 +91,6 @@ data:extend{
 }
 
 -- Todo add circuit network support
+-- Todo Make productivity raise with quality
+
 PlanetsLib.set_default_import_location("igrys-science-enhancer-machine", "igrys")

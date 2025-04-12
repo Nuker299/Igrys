@@ -1,2 +1,2 @@
-require("Scripts.Control.CopperPlateMachine")
+require("Scripts.Control.DayNightCycle")
 require("Scripts.Control.EnrichedRecipeEnable")
