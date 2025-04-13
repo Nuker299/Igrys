@@ -126,7 +126,7 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-magic-teseract",
-        icon = "__Igrys__/Assets/Technologies/teseract.png",
+        icon = "__Igrys__/Assets/Technologies/magic-teseract.png",
         icon_size = 1024,
 
         effects = {
@@ -263,7 +263,7 @@ data:extend({
         name = "igrys-rich-magic-teseract",
         icons = {
             {
-                icon = "__Igrys__/Assets/Technologies/teseract.png",
+                icon = "__Igrys__/Assets/Technologies/magic-teseract.png",
                 icon_size = 1024,
             },
             {

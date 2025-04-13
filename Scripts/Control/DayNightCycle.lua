@@ -13,7 +13,7 @@ function Turn(day)
     --game.print("Turning " .. (day and "on" or "off") .. " day/night cycle")
     
     TurnCopperPlateMachines(day)
-    EffectsDuringDay(day)
+    --EffectsDuringDay(day)
 end
 
 script.on_nth_tick(60 * 5, function()

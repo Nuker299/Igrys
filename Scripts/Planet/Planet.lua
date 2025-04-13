@@ -33,7 +33,9 @@ PlanetsLib:extend({
                         ["igrys-light-oil"] = {},
                         ["igrys-water"] = {},
                         ["igrys-magic-fluid"] = {},
-                        ["igrys-ruin"] = {}
+                        
+                        --["igrys-ruin"] = {},
+                        ["igrys-rock"] = {}
                     }
                 },
             }
