@@ -116,12 +116,31 @@ data:extend {
                         filename = "__Igrys__/Assets/Decoratives/rock-2-main.png",
                         size = 224,
                         scale = 0.5,
-                    }, --{
-                    --    filename = "__Igrys__/Assets/Decoratives/rock-2-shadow.png",
-                    --    size = 224,
-                    --    draw_as_shadow = true,
-                    --    scale = 0.5,
-                    --}
+                    }, {
+                        filename = "__Igrys__/Assets/Decoratives/rock-2-shadow.png",
+                        size = 224,
+                        draw_as_shadow = true,
+                        scale = 0.5,
+                    }
+                }
+            }, {
+                layers = {
+                    {
+                        filename = "__Igrys__/Assets/Decoratives/rock-3-lightmask.png",
+                        size = 224,
+                        draw_as_light = true,
+                        scale = 0.5,
+                        blend_mode = "additive",
+                    }, {
+                        filename = "__Igrys__/Assets/Decoratives/rock-3-main.png",
+                        size = 224,
+                        scale = 0.5,
+                    }, {
+                        filename = "__Igrys__/Assets/Decoratives/rock-3-shadow.png",
+                        size = 224,
+                        draw_as_shadow = true,
+                        scale = 0.5,
+                    }
                 }
             }
         }

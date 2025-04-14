@@ -1,4 +1,5 @@
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+require("Scripts.Planet.MapGen")
 
 PlanetsLib:extend({
     {
@@ -18,28 +19,7 @@ PlanetsLib:extend({
         icon_size = 500,
         starmap_icon = "__Igrys__/Assets/igrys.png",
         starmap_icon_size = 500,
-        map_gen_settings = {
-            autoplace_settings = {
-                ["tile"] = {
-                    settings = {
-                        ["dry-dirt"] = {},
-                        ["dirt-1"] = {},
-                        ["sand-1"] = {},
-                    }
-                },
-                ["entity"] = {
-                    settings = {
-                        ["igrys-stone"] = {},
-                        ["igrys-light-oil"] = {},
-                        ["igrys-water"] = {},
-                        ["igrys-magic-fluid"] = {},
-                        
-                        --["igrys-ruin"] = {},
-                        ["igrys-rock"] = {}
-                    }
-                },
-            }
-        },
+        map_gen_settings = IgrysMapGen,
         gravity_pull = 1,
         draw_orbit = true,
         order = "e[gleba]-a[igrys]",
