@@ -1,6 +1,8 @@
 require("Scripts.Planet.Planet")
 require("Scripts.Planet.Resources")
 require("Scripts.Planet.Decoratives")
+require("Scripts.Planet.Tiles")
+require("Scripts.Planet.Noise")
 
 require("Scripts.Entity.ScienceMachine")
 require("Scripts.Entity.GlassSpaceRocket")

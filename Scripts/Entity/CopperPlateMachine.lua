@@ -20,6 +20,8 @@ data:extend({
         
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+
+        collision_mask = {layers={item=true, meltable=true, object=true, player=true, water_tile=true, is_object=true, is_lower_object=true, igrys_not_dirt = true}},
         
         minable =
         {
@@ -52,7 +54,10 @@ data:extend({
         weight = kg * 50,
         stack_size = 50,
         place_result = "igrys-copper-plate-machine"
-    }, 
+    },{
+        type = "collision-layer",
+        name = "igrys_not_dirt"
+    }
 })
 local restrictedRecipe =
     {

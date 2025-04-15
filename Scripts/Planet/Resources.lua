@@ -110,7 +110,8 @@ data:extend{
             random_spot_size_maximum = 1, -- don't randomize spot size
             additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
             has_starting_area_placement = false,
-            regular_rq_factor_multiplier = 1
+            regular_rq_factor_multiplier = 1,
+            tile_restriction = {"igrys-biome-1"}
         },
         stage_counts = {0},
         stages =
@@ -173,7 +174,8 @@ data:extend{
             random_spot_size_maximum = 1, -- don't randomize spot size
             additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
             has_starting_area_placement = false,
-            regular_rq_factor_multiplier = 1
+            regular_rq_factor_multiplier = 1,
+            tile_restriction = {"igrys-biome-2"}
         },
         stage_counts = {0},
         stages =
@@ -236,7 +238,8 @@ data:extend{
             random_spot_size_maximum = 1, -- don't randomize spot size
             additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
             has_starting_area_placement = false,
-            regular_rq_factor_multiplier = 1
+            regular_rq_factor_multiplier = 1,
+            tile_restriction = {"igrys-biome-1"}
         },
         stage_counts = {0},
         stages =
