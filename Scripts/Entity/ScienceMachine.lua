@@ -2,8 +2,8 @@ data:extend{
     {
          type = "assembling-machine",
          name = "igrys-science-enhancer-machine",
-         icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-         icon_size = 600,
+         icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
+         icon_size = 128,
          flags = { "placeable-neutral", "placeable-player", "player-creation" },
          minable = { mining_time = 0.1, result = "igrys-science-enhancer-machine" },
          max_health = 500,
@@ -40,14 +40,57 @@ data:extend{
          fluid_boxes_off_when_no_fluid_recipe = true,
          graphics_set =
          {
+             idle_animation = {
+                 filename = "__Igrys__/Assets/Entity/ScienceEnhancer/idle.png",
+                 priority="high",
+                 width = 384,
+                 height = 384,
+                 line_length = 1,
+                 repeat_count = 16,
+                 shift = {0.375, -0.5},
+                 scale = 0.4,
+                 animation_speed = 1/5
+             },
              animation =
              {
-                 filename = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-                 width = 600,
-                 height = 600,
-                 frame_count = 1,
-                 line_length = 1,
-                 scale = 0.3,
+                 layers =
+                 {
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/working.png",
+                         priority="high",
+                         width = 384,
+                         height = 384,
+                         frame_count = 16,
+                         line_length = 4,
+                         shift = {0.375, -0.5},
+                         scale = 0.4,
+                         animation_speed = 1/5
+                     },
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/shadow.png",
+                         priority="high",
+                         width = 384,
+                         height = 384,
+                         line_length = 1,
+                         repeat_count = 16,
+                         draw_as_shadow = true,
+                         shift = {0.375, -0.5},
+                         scale = 0.4,
+                         animation_speed = 1/5
+                     },
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/light.png",
+                         priority="high",
+                         width = 384,
+                         height = 384,
+                         frame_count = 16,
+                         line_length = 4,
+                         draw_as_light = true,
+                         shift = {0.375, -0.5},
+                         scale = 0.4,
+                         animation_speed = 1/5
+                     }
+                 }
              }
          },
          crafting_speed = 5,
@@ -63,8 +106,8 @@ data:extend{
     }, {
         type = "item",
         name = "igrys-science-enhancer-machine",
-        icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-        icon_size = 600,
+        icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
+        icon_size = 128,
         
         subgroup = "igrys-machine",
         
