@@ -9,7 +9,7 @@ data:extend({
                 seed0 = map_seed,
                 seed1 = 5116,
                 octaves = 6,
-                input_scale = 1/16,
+                input_scale = 1/32,
                 output_scale = 1
             }]]
     }, {
