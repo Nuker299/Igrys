@@ -9,32 +9,67 @@ data:extend{
          max_health = 500,
          heating_energy = "100kW",
          effect_receiver = { base_effect = { productivity = 1.5 } },
-         collision_box = { { -1.7, -1.7 }, { 1.7, 1.7 } },
-         selection_box = { { -2, -2 }, { 2, 2 } },
+         collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+         selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
          fluid_boxes = {
+             -- In factorio top left is -XY and bottom right is +XY
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.west, position = { -1.5, 0.5 } } }
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} } },
+                 --draw_only_when_connected = true,
              },
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.east, position = { 1.5, -0.5 } } }
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} } },
+                 draw_only_when_connected = true,
              },
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.south, position = { 0.5, 1.5 } } }
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} } },
+                 --draw_only_when_connected = true,
+             },
+             {
+                 production_type = "input",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} } },
+                 draw_only_when_connected = true,
+             },
+
+             {
+                 production_type = "input",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.west, position = { -2, -2} } },
+                 draw_only_when_connected = true,
+             },
+             {
+                 production_type = "input",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, 2} } },
+                 draw_only_when_connected = true,
+             },
+             
+             {
+                 production_type = "output",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.south, position = {2, 2} } },
+                 draw_only_when_connected = true,
              },
              {
                  production_type = "output",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.north, position = { -0.5, -1.5 } } }
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { -2, -2} } },
+                 draw_only_when_connected = true,
              }
          },
          fluid_boxes_off_when_no_fluid_recipe = true,
@@ -48,7 +83,7 @@ data:extend{
                  line_length = 1,
                  repeat_count = 16,
                  shift = {0.375, -0.5},
-                 scale = 0.4,
+                 scale = 0.5,
                  animation_speed = 1/5
              },
              animation =
@@ -63,7 +98,7 @@ data:extend{
                          frame_count = 16,
                          line_length = 4,
                          shift = {0.375, -0.5},
-                         scale = 0.4,
+                         scale = 0.5,
                          animation_speed = 1/5
                      },
                      {
@@ -75,7 +110,7 @@ data:extend{
                          repeat_count = 16,
                          draw_as_shadow = true,
                          shift = {0.375, -0.5},
-                         scale = 0.4,
+                         scale = 0.5,
                          animation_speed = 1/5
                      },
                      {
@@ -87,7 +122,7 @@ data:extend{
                          line_length = 4,
                          draw_as_light = true,
                          shift = {0.375, -0.5},
-                         scale = 0.4,
+                         scale = 0.5,
                          animation_speed = 1/5
                      }
                  }

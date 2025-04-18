@@ -41,6 +41,7 @@ data:extend({
                 scale = 0.45,
             }
         },
+        show_recipe_icon = false,
     }, {
         type = "item",
         name = "igrys-copper-plate-machine",
