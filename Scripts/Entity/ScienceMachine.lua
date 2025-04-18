@@ -13,34 +13,34 @@ data:extend{
          selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
          fluid_boxes = {
              -- In factorio top left is -XY and bottom right is +XY
-             {
-                 production_type = "input",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} } },
-                 --draw_only_when_connected = true,
-             },
-             {
-                 production_type = "input",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} } },
-                 draw_only_when_connected = true,
-             },
-             {
-                 production_type = "input",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} } },
-                 --draw_only_when_connected = true,
-             },
-             {
-                 production_type = "input",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} } },
-                 draw_only_when_connected = true,
-             },
+             --{
+             --    production_type = "input",
+             --    volume = 200,
+             --    pipe_covers = pipecoverspictures(),
+             --    pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} } },
+             --    --draw_only_when_connected = true,
+             --},
+             --{
+             --    production_type = "input",
+             --    volume = 200,
+             --    pipe_covers = pipecoverspictures(),
+             --    pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} } },
+             --    draw_only_when_connected = true,
+             --},
+             --{
+             --    production_type = "input",
+             --    volume = 200,
+             --    pipe_covers = pipecoverspictures(),
+             --    pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} } },
+             --    --draw_only_when_connected = true,
+             --},
+             --{
+             --    production_type = "input",
+             --    volume = 200,
+             --    pipe_covers = pipecoverspictures(),
+             --    pipe_connections = { { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} } },
+             --    draw_only_when_connected = true,
+             --},
 
              {
                  production_type = "input",
@@ -50,10 +50,10 @@ data:extend{
                  draw_only_when_connected = true,
              },
              {
-                 production_type = "input",
+                 production_type = "output",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, 2} } },
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.east, position = { 2, 2} } },
                  draw_only_when_connected = true,
              },
              
@@ -65,12 +65,14 @@ data:extend{
                  draw_only_when_connected = true,
              },
              {
-                 production_type = "output",
+                 production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { -2, -2} } },
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.north, position = { -2, -2} } },
                  draw_only_when_connected = true,
              }
+             
+             -- TODO something about the overlapping icons
          },
          fluid_boxes_off_when_no_fluid_recipe = true,
          graphics_set =
@@ -130,12 +132,25 @@ data:extend{
          },
          crafting_speed = 5,
          crafting_categories = {"igrys-enriched-science-pack"},
-         energy_source = {
-             type = "electric",
-             usage_priority = "secondary-input",
-             emissions_per_minute = { pollution = 20 }
+         energy_source =
+         {
+             type = "fluid",
+             fluid_box = {
+                 volume = 100,
+                 pipe_covers = pipecoverspictures(),
+                 filter = "igrys-magic-fluid",
+                 
+                 pipe_connections = { 
+                     { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} },
+                     { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} },
+                     { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} },
+                     { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} }
+                 },
+             },
+             burns_fluid = true,
+             scale_fluid_usage = true
          },
-         energy_usage = "6900kW",
+         energy_usage = "1MW",
          module_slots = 1,
          allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     }, {

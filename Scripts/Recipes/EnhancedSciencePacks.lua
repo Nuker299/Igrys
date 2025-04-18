@@ -1,27 +1,24 @@
 local function CreateRecipe(recipe, sciencePack)
     -- Create a copy of the existing recipe
     local newRecipe = table.deepcopy(recipe)
-    if newRecipe.ingredients then
-        newRecipe.name = "igrys-" .. recipe.name .. "-enhanced"
-        newRecipe.baseRecipe = recipe.name
-        newRecipe.category = "igrys-enriched-science-pack"
-        newRecipe.enabled = settings.startup["igrys-enable-all"].value or newRecipe.enabled
-        local icon = {icon = sciencePack.icon}
-        if not sciencePack.icon then
-            icon = sciencePack.icons[1]
-        end
-        newRecipe.icons = RichIcons(icon)
-        newRecipe.subgroup = "igrys-enriched-science-pack"
-        newRecipe.auto_recycle = false
-        newRecipe.hidden_in_factoriopedia = true
-        newRecipe.hide_from_player_crafting = true
-        newRecipe.localised_name = { "recipe-name.igrys-enriched-science-pack", recipe.localised_name or { "item-name." .. sciencePack.name}}
-        newRecipe.auto_enrich = false
-        table.insert(newRecipe.ingredients, {type = "fluid", name = "igrys-magic-fluid", amount = 2})
+    newRecipe.name = "igrys-" .. recipe.name .. "-enhanced"
+    newRecipe.baseRecipe = recipe.name
+    newRecipe.category = "igrys-enriched-science-pack"
+    newRecipe.enabled = settings.startup["igrys-enable-all"].value or newRecipe.enabled
+    --local icon = {icon = sciencePack.icon}
+    --if not sciencePack.icon then
+    --    icon = sciencePack.icons[1]
+    --end
+    --newRecipe.icons = RichIcons(icon)
+    newRecipe.subgroup = "igrys-enriched-science-pack"
+    newRecipe.auto_recycle = false
+    newRecipe.hidden_in_factoriopedia = true
+    newRecipe.hide_from_player_crafting = true
+    newRecipe.localised_name = { "recipe-name." .. recipe.name}
+    newRecipe.auto_enrich = false
 
-        data:extend{newRecipe, newTech}
-        log("New enriched recipe added for " .. recipe.name)
-    end
+    data:extend{newRecipe}
+    log("New enriched recipe added for " .. recipe.name)
 end
 
 
