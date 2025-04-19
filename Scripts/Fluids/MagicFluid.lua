@@ -8,7 +8,7 @@ data:extend({
         flow_color = {1, 0.73, 0.07},
         icon = "__Igrys__/Assets/Items/magic-fluid.png",
 
-        fuel_value = "5MJ",
+        --fuel_value = "5MJ",
         auto_barrel = false,
     },
 })

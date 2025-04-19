@@ -4,94 +4,69 @@ data:extend{
          name = "igrys-science-enhancer-machine",
          icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
          icon_size = 128,
-         flags = { "placeable-neutral", "placeable-player", "player-creation" },
+         flags = { "placeable-neutral", "placeable-player", "player-creation"},
          minable = { mining_time = 0.1, result = "igrys-science-enhancer-machine" },
          max_health = 500,
          heating_energy = "100kW",
          effect_receiver = { base_effect = { productivity = 1.5 } },
          collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
          selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+         fluid_boxes_off_when_no_fluid_recipe = false,
          fluid_boxes = {
-             -- In factorio top left is -XY and bottom right is +XY
-             --{
-             --    production_type = "input",
-             --    volume = 200,
-             --    pipe_covers = pipecoverspictures(),
-             --    pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} } },
-             --    --draw_only_when_connected = true,
-             --},
-             --{
-             --    production_type = "input",
-             --    volume = 200,
-             --    pipe_covers = pipecoverspictures(),
-             --    pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} } },
-             --    draw_only_when_connected = true,
-             --},
-             --{
-             --    production_type = "input",
-             --    volume = 200,
-             --    pipe_covers = pipecoverspictures(),
-             --    pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} } },
-             --    --draw_only_when_connected = true,
-             --},
-             --{
-             --    production_type = "input",
-             --    volume = 200,
-             --    pipe_covers = pipecoverspictures(),
-             --    pipe_connections = { { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} } },
-             --    draw_only_when_connected = true,
-             --},
-
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input", direction = defines.direction.west, position = { -2, -2} } },
-                 draw_only_when_connected = true,
-             },
-             {
-                 production_type = "output",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "output", direction = defines.direction.east, position = { 2, 2} } },
-                 draw_only_when_connected = true,
-             },
-             
-             {
-                 production_type = "output",
-                 volume = 200,
-                 pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "output", direction = defines.direction.south, position = {2, 2} } },
-                 draw_only_when_connected = true,
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.west, position = { -2, 1 } } }
              },
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input", direction = defines.direction.north, position = { -2, -2} } },
-                 draw_only_when_connected = true,
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -1 } } }
+             },
+             {
+                 production_type = "input",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { 1, 2 } } }
+             },
+             {
+                 production_type = "output",
+                 volume = 200,
+                 pipe_covers = pipecoverspictures(),
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { -1, -2 } } }
              }
-             
-             -- TODO something about the overlapping icons
          },
-         fluid_boxes_off_when_no_fluid_recipe = true,
          graphics_set =
          {
-             idle_animation = {
-                 filename = "__Igrys__/Assets/Entity/ScienceEnhancer/idle.png",
-                 priority="high",
-                 width = 384,
-                 height = 384,
-                 line_length = 1,
-                 repeat_count = 16,
-                 shift = {0.375, -0.5},
-                 scale = 0.5,
-                 animation_speed = 1/5
-             },
              animation =
              {
                  layers =
                  {
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/idle.png",
+                         priority = "high",
+                         width = 384,
+                         height = 384,
+                         shift = {0.375, -0.375},
+                         scale = 0.5
+                     },
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/shadow.png",
+                         priority = "high",
+                         width = 384,
+                         height = 384,
+                         draw_as_shadow = true,
+                         shift = {0.375, -0.375},
+                         scale = 0.5
+                     }
+                 }
+             },
+             working_visualisations =
+             {
+                 {
+                     animation =
                      {
                          filename = "__Igrys__/Assets/Entity/ScienceEnhancer/working.png",
                          priority="high",
@@ -99,22 +74,15 @@ data:extend{
                          height = 384,
                          frame_count = 16,
                          line_length = 4,
-                         shift = {0.375, -0.5},
+                         shift = {0.375, -0.375},
                          scale = 0.5,
                          animation_speed = 1/5
                      },
-                     {
-                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/shadow.png",
-                         priority="high",
-                         width = 384,
-                         height = 384,
-                         line_length = 1,
-                         repeat_count = 16,
-                         draw_as_shadow = true,
-                         shift = {0.375, -0.5},
-                         scale = 0.5,
-                         animation_speed = 1/5
-                     },
+                 },
+                 {
+                     fadeout = true,
+                     effect = "flicker",
+                     animation =
                      {
                          filename = "__Igrys__/Assets/Entity/ScienceEnhancer/light.png",
                          priority="high",
@@ -123,34 +91,21 @@ data:extend{
                          frame_count = 16,
                          line_length = 4,
                          draw_as_light = true,
-                         shift = {0.375, -0.5},
+                         shift = {0.375, -0.375},
                          scale = 0.5,
                          animation_speed = 1/5
                      }
-                 }
+                 },
              }
          },
          crafting_speed = 5,
          crafting_categories = {"igrys-enriched-science-pack"},
-         energy_source =
-         {
-             type = "fluid",
-             fluid_box = {
-                 volume = 100,
-                 pipe_covers = pipecoverspictures(),
-                 filter = "igrys-magic-fluid",
-                 
-                 pipe_connections = { 
-                     { flow_direction = "input", direction = defines.direction.east, position = { 2, -2} },
-                     { flow_direction = "output", direction = defines.direction.north, position = { 2, -2} },
-                     { flow_direction = "input", direction = defines.direction.south, position = { -2, 2} },
-                     { flow_direction = "output", direction = defines.direction.west, position = { -2, 2} }
-                 },
-             },
-             burns_fluid = true,
-             scale_fluid_usage = true
+         energy_source = {
+             type = "electric",
+             usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 20 }
          },
-         energy_usage = "1MW",
+         energy_usage = "6900kW",
          module_slots = 1,
          allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     }, {
