@@ -1,0 +1,11 @@
+{
+  "recipe":
+  [
+    ["igrys-strong-barrel-filled-magic-fluid", "igrys-magic-fluid-strong-barrel"],
+    ["igrys-empty-strong-barrel-filled-magic-fluid", "empty-igrys-magic-fluid-strong-barrel"]
+  ],
+  "item":
+  [
+    ["igrys-strong-barrel-filled-magic-fluid", "igrys-magic-fluid-strong-barrel"]
+  ]
+}

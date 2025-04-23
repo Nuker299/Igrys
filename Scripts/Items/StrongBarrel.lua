@@ -23,7 +23,7 @@ data:extend({
         category = "advanced-crafting"
     }, {
         type = "item",
-        name = "igrys-strong-barrel-filled-magic-fluid",
+        name = "igrys-magic-fluid-strong-barrel",
         icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
         subgroup = "igrys-barreling",
         order = "b",
@@ -31,7 +31,7 @@ data:extend({
         weight = 1 / 100 * tons,
     }, {
         type = "recipe",
-        name = "igrys-strong-barrel-filled-magic-fluid",
+        name = "igrys-magic-fluid-strong-barrel",
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = false,
         ingredients = {
@@ -39,18 +39,19 @@ data:extend({
             {type="fluid", name="igrys-magic-fluid", amount=10, ignored_by_stats=10}
         },
         results = {
-            {type="item", name="igrys-strong-barrel-filled-magic-fluid", amount=1},
+            {type="item", name="igrys-magic-fluid-strong-barrel", amount=1},
         },
         energy_required = 1,
         category = "crafting-with-fluid",
+        auto_recycle = false,
     }, {
         type = "recipe",
-        name = "igrys-empty-strong-barrel-filled-magic-fluid",
+        name = "empty-igrys-magic-fluid-strong-barrel",
         subgroup = "igrys-barreling",
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = false,
         ingredients = {
-            {type="item", name="igrys-strong-barrel-filled-magic-fluid", amount=1},
+            {type="item", name="igrys-magic-fluid-strong-barrel", amount=1},
         },
         results = {
             {type="item", name="igrys-strong-barrel", amount=1, ignored_by_stats=1},
@@ -59,10 +60,11 @@ data:extend({
         energy_required = 1,
         category = "crafting-with-fluid",
         icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
-        order = "c"
+        order = "c",
+        auto_recycle = false,
     }
 })
 
 PlanetsLib.set_default_import_location("igrys-strong-barrel", "igrys")
-PlanetsLib.set_default_import_location("igrys-strong-barrel-filled-magic-fluid", "igrys")
+PlanetsLib.set_default_import_location("igrys-magic-fluid-strong-barrel", "igrys")
 --PlanetsLib.restrict_to_planet(data.raw["recipe"]["igrys-strong-barrel"], "igrys")
