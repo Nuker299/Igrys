@@ -58,52 +58,64 @@ data:extend({
     }, {
         type = "tile",
         name = "igrys-biome-1",
-        --subgroup = "vulcanus-tiles",
-        --order = "a-d",
         autoplace =
         {
             probability_expression = "noise_igrys_biome_1",
         },
         collision_mask = notDirtCollisionMask(),
         layer = 3,
-        --sprite_usage_surface = "vulcanus",
         variants = tile_variations_template(
-                "__space-age__/graphics/terrain/gleba/lowland-red-vein-3.png",
-                "__base__/graphics/terrain/masks/transition-1.png",
+                "__alien-biomes-graphics__/graphics/terrain/mineral-cream-sand-1.png",
+                "__base__/graphics/terrain/masks/transition-3.png",
                 {
                     max_size = 4,
                     [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
-                    [2] = { probability = 1, weights = {0.070, 0.070, 0.025, 0.070, 0.070, 0.070, 0.007, 0.025, 0.070, 0.050, 0.015, 0.026, 0.030, 0.005, 0.070, 0.027 } },
-                    [4] = { probability = 1.00, weights = {0.070, 0.070, 0.070, 0.070, 0.070, 0.070, 0.015, 0.070, 0.070, 0.070, 0.015, 0.050, 0.070, 0.070, 0.065, 0.070 }, },
-                    --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} }
+                    [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+                    [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
                 }
         ),
-        absorptions_per_second = tile_pollution.lava,
-        map_color={115, 53, 66},
+        map_color={177, 167, 115},
     }, {
         type = "tile",
         name = "igrys-biome-2",
-        --subgroup = "vulcanus-tiles",
-        --order = "a-d",
         autoplace =
         {
             probability_expression = "noise_igrys_biome_2",
         },
         collision_mask = notDirtCollisionMask(),
         layer = 3,
-        --sprite_usage_surface = "vulcanus",
         variants = tile_variations_template(
-                "__space-age__/graphics/terrain/gleba/highland-yellow-rock.png",
-                "__base__/graphics/terrain/masks/transition-1.png",
+                "__alien-biomes-graphics__/graphics/terrain/mineral-brown-sand-2.png",
+                "__base__/graphics/terrain/masks/transition-3.png",
                 {
                     max_size = 4,
                     [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
                     [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
                     [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
-                    --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} },
                 }
         ),
-        absorptions_per_second = tile_pollution.lava,
-        map_color={52, 55, 48},
-    }
+        map_color={115, 84, 64},
+    },
+    --{
+    --    type = "tile",
+    --    name = 
+    --    collision_mask = tile_collision_masks.ground(),
+    --    autoplace = {
+    --        probability_expression = 
+    --    },
+    --    layer = 3,
+    --    variants = tile_variations_template_ab(
+    --            "__alien-biomes-graphics__/graphics/terrain/"..biome_name..".png",
+    --            "__base__/graphics/terrain/masks/transition-3.png",
+    --            {
+    --                max_size = 4,
+    --                [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
+    --                [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+    --                [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+    --                --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} },
+    --            }
+    --    ),
+    --    walking_sound = table.deepcopy(biomes.sounds.dirt),
+    --    map_color =
+    --} 
 })

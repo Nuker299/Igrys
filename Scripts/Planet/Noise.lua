@@ -18,6 +18,10 @@ data:extend({
         expression = "igrys_neutral"
     }, {
         type = "noise-expression",
+        name = "noise_igrys_stone",
+        expression = "igrys_neutral - 1.5" 
+    }, {
+        type = "noise-expression",
         name = "noise_igrys_biomes",
         --parameters = {"seed1"},
         expression = [[multioctave_noise{
