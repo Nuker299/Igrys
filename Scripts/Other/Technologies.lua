@@ -85,8 +85,8 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-conductive-brick-usage",
-        icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        icon_size = 256,
+        icon = "__Igrys__/Assets/Entity/MagicPumpjack/icon.png",
+        icon_size = 128,
         effects = {
             {
                 type = "unlock-recipe",
@@ -364,8 +364,8 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-science-enriching",
-        icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-        icon_size = 600,
+        icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
+        icon_size = 128,
         effects = {
             {
                 type = "unlock-recipe",
