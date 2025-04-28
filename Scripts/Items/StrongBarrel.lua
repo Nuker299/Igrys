@@ -2,29 +2,38 @@ data:extend({
     {
         type = "item",
         name = "igrys-strong-barrel",
-        icon = "__Igrys__/Assets/Items/empty-barrel.png",
+        icon = "__Igrys__/Assets/Items/Barrel/Empty.png",
+        icon_size = 128,
         subgroup = "igrys-barreling",
         order = "a",
         stack_size = 10,
         weight = 1 / 200 * tons,
-    },{
+    }, {
         type = "recipe",
         name = "igrys-strong-barrel",
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         ingredients = {
-            {type="item", name="igrys-cermite", amount=5},
-            {type="item", name="igrys-rich-magic-teseract", amount=1}
+            { type = "item", name = "igrys-cermite", amount = 5 },
+            { type = "item", name = "igrys-rich-magic-teseract", amount = 1 }
         },
         results = {
-            {type="item", name="igrys-strong-barrel", amount=10},
+            { type = "item", name = "igrys-strong-barrel", amount = 10 },
         },
         energy_required = 10,
         category = "advanced-crafting"
     }, {
         type = "item",
         name = "igrys-magic-fluid-strong-barrel",
-        icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
+        icon = "__Igrys__/Assets/Items/Barrel/Filled2.png",
+        icon_size = 128,
+        pictures =
+        {
+            {size = 128, filename = "__Igrys__/Assets/Items/Barrel/Filled1.png", scale = 0.25},
+            {size = 128, filename = "__Igrys__/Assets/Items/Barrel/Filled2.png", scale = 0.25},
+            {size = 128, filename = "__Igrys__/Assets/Items/Barrel/Filled3.png", scale = 0.25},
+            {size = 128, filename = "__Igrys__/Assets/Items/Barrel/Filled4.png", scale = 0.25}
+        },
         subgroup = "igrys-barreling",
         order = "b",
         stack_size = 10,
@@ -35,11 +44,11 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = false,
         ingredients = {
-            {type="item", name="igrys-strong-barrel", amount=1, ignored_by_stats=1},
-            {type="fluid", name="igrys-magic-fluid", amount=10, ignored_by_stats=10}
+            { type = "item", name = "igrys-strong-barrel", amount = 1, ignored_by_stats = 1 },
+            { type = "fluid", name = "igrys-magic-fluid", amount = 10, ignored_by_stats = 10 }
         },
         results = {
-            {type="item", name="igrys-magic-fluid-strong-barrel", amount=1},
+            { type = "item", name = "igrys-magic-fluid-strong-barrel", amount = 1 },
         },
         energy_required = 1,
         category = "crafting-with-fluid",
@@ -51,15 +60,16 @@ data:extend({
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = false,
         ingredients = {
-            {type="item", name="igrys-magic-fluid-strong-barrel", amount=1},
+            { type = "item", name = "igrys-magic-fluid-strong-barrel", amount = 1 },
         },
         results = {
-            {type="item", name="igrys-strong-barrel", amount=1, ignored_by_stats=1},
-            {type="fluid", name="igrys-magic-fluid", amount=10, ignored_by_stats=10}
+            { type = "item", name = "igrys-strong-barrel", amount = 1, ignored_by_stats = 1 },
+            { type = "fluid", name = "igrys-magic-fluid", amount = 10, ignored_by_stats = 10 }
         },
         energy_required = 1,
         category = "crafting-with-fluid",
-        icon = "__Igrys__/Assets/Items/magic-fluid-barrel.png",
+        icon = "__Igrys__/Assets/Items/Barrel/Empty.png",
+        icon_size = 128,
         order = "c",
         auto_recycle = false,
     }

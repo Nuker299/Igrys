@@ -299,7 +299,8 @@ data:extend({
     }, {
         type = "technology",
         name = "igrys-strong-barrel",
-        icon = "__Igrys__/Assets/Items/empty-barrel.png",
+        icon = "__Igrys__/Assets/Items/Barrel/Filled2.png",
+        icon_size = 128,
         effects = {
             {
                 type = "unlock-recipe",
