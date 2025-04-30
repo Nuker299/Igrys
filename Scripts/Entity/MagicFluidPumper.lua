@@ -2,8 +2,8 @@ data:extend({
     {
         type = "mining-drill",
         name = "igrys-magic-pumpjack",
-        icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        icon_size = 256,
+        icon = "__Igrys__/Assets/Entity/MagicPumpjack/icon.png",
+        icon_size = 128,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = "igrys-magic-pumpjack"},
         resource_categories = {"basic-fluid", "igrys-magic-fluid"},
@@ -65,30 +65,66 @@ data:extend({
             height = 12
         },
         monitor_visualization_tint = {78, 173, 255},
-        base_picture =
+        graphics_set =
         {
-            sheet =
+            animation =
             {
-                filename = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-                size = 256,
-                scale = 0.45,
-                frames = 1,
+                layers =
+                {
+                    {
+                        filename = "__Igrys__/Assets/Entity/MagicPumpjack/idle.png",
+                        priority = "high",
+                        width = 256,
+                        height = 256,
+                        shift = {0.28125, 0},
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__Igrys__/Assets/Entity/MagicPumpjack/shadow.png",
+                        priority = "high",
+                        width = 256,
+                        height = 256,
+                        draw_as_shadow = true,
+                        shift = {0.28125, 0},
+                        scale = 0.5,
+                    }
+                }
+            },
+            working_visualisations =
+            {
+                {
+                    animation =
+                    {
+                        filename = "__Igrys__/Assets/Entity/MagicPumpjack/working.png",
+                        priority="high",
+                        width = 256,
+                        height = 256,
+                        frame_count = 16,
+                        line_length = 4,
+                        shift = {0.28125, 0},
+                        scale = 0.5,
+                        animation_speed = 0.5,
+                    },
+                },
+                {
+                    fadeout = true,
+                    effect = "flicker",
+                    animation =
+                    {
+                        filename = "__Igrys__/Assets/Entity/MagicPumpjack/light.png",
+                        priority="high",
+                        width = 256,
+                        height = 256,
+                        frame_count = 16,
+                        line_length = 4,
+                        draw_as_light = true,
+                        shift = {0.28125, 0},
+                        scale = 0.5,
+                        animation_speed = 0.5,
+                    }
+                },
             }
         },
-        --graphics_set =
-        --{
-        --    animation =
-        --    {
-        --        {
-        --            filename = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        --            scale = 0.1,
-        --            line_length = 1,
-        --            width = 1024,
-        --            height = 1024,
-        --            frame_count = 1,
-        --        },
-        --    }
-        --},
         open_sound = {filename = "__base__/sound/open-close/pumpjack-open.ogg", volume = 0.5},
         close_sound = {filename = "__base__/sound/open-close/pumpjack-close.ogg", volume = 0.5},
         working_sound =
@@ -105,8 +141,8 @@ data:extend({
     }, {
         type = "item",
         name = "igrys-magic-pumpjack",
-        icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-        icon_size = 256,
+        icon = "__Igrys__/Assets/Entity/MagicPumpjack/icon.png",
+        icon_size = 128,
 
         subgroup = "igrys-machine",
 
@@ -119,8 +155,6 @@ local restrictedRecipe =
 {
     type = "recipe",
     name = "igrys-magic-pumpjack",
-    icon = "__Igrys__/Assets/Entity/MagicPumpjack.png",
-    icon_size = 256,
     enabled = settings.startup["igrys-enable-all"].value,
     ingredients = {
         {type="fluid", name="water", amount=100},
