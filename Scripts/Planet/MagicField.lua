@@ -10,8 +10,8 @@ local magic_field_animation = {
                 variation_count = 4,
                 filename = "__Igrys__/Assets/Tiles/MagicField/magic-field.png",
                 frame_count = 16,
-                animation_speed = 0.2,
-                tint = {0.3, 0.3, 0.3, 0.3},
+                animation_speed = 0.15,
+                tint = {0.2, 0.2, 0.2, 0.2},
                 scale = 2
             },
             {
@@ -21,10 +21,10 @@ local magic_field_animation = {
                 variation_count = 4,
                 filename = "__Igrys__/Assets/Tiles/MagicField/magic-field-glow.png",
                 frame_count = 16,
-                animation_speed = 0.2,
+                animation_speed = 0.15,
                 scale = 4,
                 draw_as_glow = true,
-                tint = {0.3, 0.3, 0.3, 0.3},
+                tint = {0.2, 0.2, 0.2, 0.2},
                 blend_mode = "additive"
             },
         }

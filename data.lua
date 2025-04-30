@@ -1,6 +1,7 @@
 require("Scripts.Planet.Planet")
 require("Scripts.Planet.Resources")
 require("Scripts.Planet.Decoratives")
+require("Scripts.Planet.MagicField")
 
 require("Scripts.Entity.ScienceMachine")
 require("Scripts.Entity.GlassSpaceRocket")
@@ -25,7 +26,6 @@ require("Scripts.Items.Cermet")
 
 require("Scripts.Fluids.MagicFluid")
 
-require("Scripts.Tiles.MagicField")
 
 require("Scripts.Other.Technologies")
 require("Scripts.Other.Groups")
