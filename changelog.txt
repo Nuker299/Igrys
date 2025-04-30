@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2025-04-24
+  Tweaks:
+    - Renamed recipe: igrys-magic-fluid-strong-barrel → igrys-magic-fluid-barrel
+    - Renamed recipe: empty-igrys-magic-fluid-strong-barrel → empty-igrys-magic-fluid-barrel
+    - Renamed item: igrys-magic-fluid-strong-barrel → igrys-magic-fluid-barrel
+---------------------------------------------------------------------------------------------------
 Version: 1.3.2
 Date: 2025-04-23
   Tweaks:

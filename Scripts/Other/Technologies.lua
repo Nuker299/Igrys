@@ -307,10 +307,10 @@ data:extend({
                 recipe = "igrys-strong-barrel"
             }, {
                 type = "unlock-recipe",
-                recipe = "igrys-magic-fluid-strong-barrel"
+                recipe = "igrys-magic-fluid-barrel"
             }, {
                 type = "unlock-recipe",
-                recipe = "empty-igrys-magic-fluid-strong-barrel"
+                recipe = "empty-igrys-magic-fluid-barrel"
             }
         },
         prerequisites = {
