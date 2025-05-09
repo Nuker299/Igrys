@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-05-09
+  Bugfixes:
+    - Fixed spidertron having the wrong recycle recipe
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-04-24
+  Features:
+    - New Great Art for all of the Igrys custom machinery, **courtesy of KaueNP**
+    - New Magic Field effect present on the surface of Igrys, **courtesy of Notnotmelon**
+  Changes:
+    - Copper Plate Machine is slightly faster, but is now 4x4
+    - Science Enhancer Machine is now 5x5
+---------------------------------------------------------------------------------------------------
 Version: 1.3.3
 Date: 2025-04-24
   Tweaks:

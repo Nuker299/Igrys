@@ -29,3 +29,5 @@ require("Scripts.Fluids.MagicFluid")
 
 require("Scripts.Other.Technologies")
 require("Scripts.Other.Groups")
+require("Scripts.Other.SpidertronSteal")
+require("Scripts.Other.BaseIntegration")
