@@ -32,7 +32,7 @@ data:extend {
             }
         },
         autoplace = {
-            probability_expression = "clamp(igrys_neutral, -1, 0) * -1 * multiplier * control * (rock_density - penalty)",
+            probability_expression = "(noise_igrys_dirt < 0.75) * multiplier * control * (rock_density - penalty)",
             local_expressions = {
                 multiplier = 0.5,
                 penalty = 2,
@@ -77,7 +77,7 @@ data:extend {
             }
         },
         autoplace = {
-            probability_expression = "clamp(igrys_neutral, 0, 1) * multiplier * control * (rock_density - penalty)",
+            probability_expression = "(noise_igrys_dirt > 0.75) * multiplier * control * (rock_density - penalty)",
             local_expressions = {
                 multiplier = 0.2,
                 penalty = 1,

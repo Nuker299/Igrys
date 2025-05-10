@@ -8,17 +8,14 @@ IgrysMapGen = {
     autoplace_settings = {
         ["tile"] = {
             settings = {
-                ["igrys-dirt"] = {},
+                ["igrys-light-oil"] = {},
                 ["igrys-dirt-2"] = {},
-                ["igrys-biome-1"] = {},
-                ["igrys-biome-2"] = {},
-                --["igrys-biome-3"] = {}
+                ["igrys-dirt"] = {},
             }
         },
         ["entity"] = {
             settings = {
                 ["igrys-stone"] = {},
-                ["igrys-light-oil"] = {},
                 ["igrys-water"] = {},
                 ["igrys-magic-fluid"] = {},
 
