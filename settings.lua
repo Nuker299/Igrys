@@ -8,6 +8,7 @@ data:extend({
     }, {
         type = "bool-setting",
         name = "igrys-enhance-modded-science-packs",
+        localised_description = {"mod-setting-description.igrys-enhance-modded-science-packs"},
         setting_type = "startup",
         default_value = false
     }, {
@@ -18,6 +19,12 @@ data:extend({
     }, {
         type = "bool-setting",
         name = "igrys-keep-diagonal-inserter-base",
+        setting_type = "startup",
+        default_value = false
+    }, {
+        type = "bool-setting",
+        name = "igrys-unique-glass",
+        localised_description = {"mod-setting-description.igrys-unique-glass"},
         setting_type = "startup",
         default_value = false
     }

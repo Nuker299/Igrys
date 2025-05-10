@@ -8,6 +8,10 @@ local glass = {
         weight = 20000,
         order = "a"
     }
+if settings.startup["igrys-unique-glass"].value then
+    glass.localised_name = {"item-name.igrys-unique-glass"}
+    glass.icon = "__Igrys__/Assets/Items/unique-glass.png"
+end
     
     local glassRecipe = {
         type = "recipe",

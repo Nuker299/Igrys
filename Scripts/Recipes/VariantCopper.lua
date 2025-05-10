@@ -10,7 +10,7 @@ data:extend{
             {type = "item", name = "copper-cable", amount = 5}
         },
         results = {{type="item", name="electronic-circuit", amount=2}},
-        icons = MadeFromIcons(data.raw["item"]["electronic-circuit"].icon, "__Igrys__/Assets/Items/glass.png"),
+        icons = MadeFromIcons(data.raw["item"]["electronic-circuit"].icon, data.raw["item"]["igrys-glass"].icon),
         enabled = settings.startup["igrys-enable-all"].value,
         allow_productivity = true,
         energy_required = 3,
@@ -70,7 +70,7 @@ data:extend{
         {
             {type = "item", name = "plastic-bar", amount = 1}
         },
-        icons = MadeFromIcons(data.raw["item"]["plastic-bar"].icon, "__Igrys__/Assets/Items/glass.png"),
+        icons = MadeFromIcons(data.raw["item"]["plastic-bar"].icon, data.raw["item"]["igrys-glass"].icon),
         allow_productivity = true,
         allow_as_intermediate = false,
         auto_recycle = false
