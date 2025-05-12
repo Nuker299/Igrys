@@ -38,7 +38,7 @@ data:extend({
         type = "noise-expression",
         name = "noise_igrys_light_oil_raw",
         expression = [[multioctave_noise{
-                x = x/50,
+                x = x/200,
                 y = y,
                 persistence = 0.5,
                 seed0 = map_seed,

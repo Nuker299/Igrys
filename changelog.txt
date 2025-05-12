@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.4.2
-Date: 2025-05-10
+Version: 1.5.0
+Date: 2025-05-12
+  Features:
+    - New Map Gen
+    - New Light Oil Lakes
   Tweaks:
     - Added an option for the glass to have a different tint and name, to avoid confusion with the glass from other mods
 ---------------------------------------------------------------------------------------------------

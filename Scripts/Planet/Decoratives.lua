@@ -12,11 +12,11 @@ data:extend {
             mining_particle = "stone-particle",
             mining_time = 3,
             results = {
-                { type = "item", name = "stone", amount_min = 24, amount_max = 50 },
-                { type = "item", name = "igrys-magic-part-1", amount_min = 1, amount_max = 5 },
-                { type = "item", name = "igrys-magic-part-2", amount_min = 1, amount_max = 5 },
-                { type = "item", name = "igrys-magic-part-3", amount_min = 1, amount_max = 5 },
-                { type = "item", name = "igrys-magic-teseract", amount_min = 0, amount_max = 1 },
+                { type = "item", name = "stone-brick", amount_min = 24, amount_max = 50 },
+                { type = "item", name = "igrys-rich-magic-part-1", amount_min = 1, amount_max = 5 },
+                { type = "item", name = "igrys-rich-magic-part-2", amount_min = 1, amount_max = 5 },
+                { type = "item", name = "igrys-rich-magic-part-3", amount_min = 1, amount_max = 5 },
+                { type = "item", name = "igrys-rich-magic-teseract", amount_min = 0, amount_max = 1 },
             },
         },
 
@@ -34,7 +34,7 @@ data:extend {
         autoplace = {
             probability_expression = "(noise_igrys_dirt < 0.75) * multiplier * control * (rock_density - penalty)",
             local_expressions = {
-                multiplier = 0.2,
+                multiplier = 0.1,
                 penalty = 2,
                 control = "control:rocks:size",
             }
