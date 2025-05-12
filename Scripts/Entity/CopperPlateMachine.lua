@@ -99,7 +99,7 @@ data:extend({
         weight = kg * 50,
         stack_size = 50,
         place_result = "igrys-copper-plate-machine"
-    }, 
+    }
 })
 local restrictedRecipe =
     {
