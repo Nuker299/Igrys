@@ -25,6 +25,8 @@ end
 local item = data.raw["item"]["diagonal-inserter"]
 item.order = "da[fast-inserter]"
 
+PlanetsLib.set_default_import_location("diagonal-inserter", "igrys")
+
 data:extend({
     {
         type = "technology",

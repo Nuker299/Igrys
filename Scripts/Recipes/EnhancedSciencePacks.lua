@@ -19,7 +19,7 @@ local function CreateRecipe(recipe, sciencePack)
         newRecipe.auto_enrich = false
         table.insert(newRecipe.ingredients, {type = "fluid", name = "igrys-magic-fluid", amount = 2})
 
-        data:extend{newRecipe, newTech}
+        data:extend{newRecipe}
         log("New enriched recipe added for " .. recipe.name)
     end
 end

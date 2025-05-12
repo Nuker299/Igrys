@@ -2,52 +2,100 @@ data:extend{
     {
          type = "assembling-machine",
          name = "igrys-science-enhancer-machine",
-         icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-         icon_size = 600,
-         flags = { "placeable-neutral", "placeable-player", "player-creation" },
+         icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
+         icon_size = 128,
+         flags = { "placeable-neutral", "placeable-player", "player-creation"},
          minable = { mining_time = 0.1, result = "igrys-science-enhancer-machine" },
          max_health = 500,
          heating_energy = "100kW",
          effect_receiver = { base_effect = { productivity = 1.5 } },
-         collision_box = { { -1.7, -1.7 }, { 1.7, 1.7 } },
-         selection_box = { { -2, -2 }, { 2, 2 } },
+         collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+         selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+         fluid_boxes_off_when_no_fluid_recipe = false,
          fluid_boxes = {
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.west, position = { -1.5, 0.5 } } }
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.west, position = { -2, 1 } } }
              },
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.east, position = { 1.5, -0.5 } } }
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 2, -1 } } }
              },
              {
                  production_type = "input",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.south, position = { 0.5, 1.5 } } }
+                 pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { 1, 2 } } }
              },
              {
                  production_type = "output",
                  volume = 200,
                  pipe_covers = pipecoverspictures(),
-                 pipe_connections = { { flow_direction = "input-output", direction = defines.direction.north, position = { -0.5, -1.5 } } }
+                 pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { -1, -2 } } }
              }
          },
-         fluid_boxes_off_when_no_fluid_recipe = true,
          graphics_set =
          {
              animation =
              {
-                 filename = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-                 width = 600,
-                 height = 600,
-                 frame_count = 1,
-                 line_length = 1,
-                 scale = 0.3,
+                 layers =
+                 {
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/idle.png",
+                         priority = "high",
+                         width = 384,
+                         height = 384,
+                         shift = {0.375, -0.375},
+                         scale = 0.5
+                     },
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/shadow.png",
+                         priority = "high",
+                         width = 384,
+                         height = 384,
+                         draw_as_shadow = true,
+                         shift = {0.375, -0.375},
+                         scale = 0.5
+                     }
+                 }
+             },
+             working_visualisations =
+             {
+                 {
+                     animation =
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/working.png",
+                         priority="high",
+                         width = 384,
+                         height = 384,
+                         frame_count = 16,
+                         line_length = 4,
+                         shift = {0.375, -0.375},
+                         scale = 0.5,
+                         animation_speed = 1/5
+                     },
+                 },
+                 {
+                     fadeout = true,
+                     effect = "flicker",
+                     animation =
+                     {
+                         filename = "__Igrys__/Assets/Entity/ScienceEnhancer/light.png",
+                         priority="high",
+                         width = 384,
+                         height = 384,
+                         frame_count = 16,
+                         line_length = 4,
+                         draw_as_light = true,
+                         shift = {0.375, -0.375},
+                         scale = 0.5,
+                         animation_speed = 1/5
+                     }
+                 },
              }
          },
          crafting_speed = 5,
@@ -63,8 +111,8 @@ data:extend{
     }, {
         type = "item",
         name = "igrys-science-enhancer-machine",
-        icon = "__Igrys__/Assets/Entity/ScienceEnhancerMachine.png",
-        icon_size = 600,
+        icon = "__Igrys__/Assets/Entity/ScienceEnhancer/icon.png",
+        icon_size = 128,
         
         subgroup = "igrys-machine",
         

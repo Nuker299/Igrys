@@ -11,7 +11,7 @@ data:extend({
         results = {
             {type = "item", name = "automation-science-pack", amount = 5},
         },
-        icons = MadeFromIcons(data.raw["tool"]["automation-science-pack"].icon, "__Igrys__/Assets/Items/glass.png"),
+        icons = MadeFromIcons(data.raw["tool"]["automation-science-pack"].icon, data.raw["item"]["igrys-glass"].icon),
         subgroup = "science-pack",
         order = "az[igrys-automation-science-pack]",
         allow_productivity = true
