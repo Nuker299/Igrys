@@ -34,7 +34,7 @@ data:extend {
         autoplace = {
             probability_expression = "(noise_igrys_dirt < 0.75) * multiplier * control * (rock_density - penalty)",
             local_expressions = {
-                multiplier = 0.5,
+                multiplier = 0.2,
                 penalty = 2,
                 control = "control:rocks:size",
             }

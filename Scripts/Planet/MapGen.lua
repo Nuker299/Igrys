@@ -20,8 +20,8 @@ IgrysMapGen = {
                 ["igrys-magic-fluid"] = {},
 
                 ["igrys-ruin"] = {},
-                ["igrys-rock"] = {}
+                ["igrys-rock"] = {},
             }
-        },
+        }
     }
 }
