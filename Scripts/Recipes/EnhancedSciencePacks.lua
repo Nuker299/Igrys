@@ -6,11 +6,6 @@ local function CreateRecipe(recipe, sciencePack)
         newRecipe.baseRecipe = recipe.name
         newRecipe.category = "igrys-enriched-science-pack"
         newRecipe.enabled = settings.startup["igrys-enable-all"].value or newRecipe.enabled
-        local icon = {icon = sciencePack.icon}
-        if not sciencePack.icon then
-            icon = sciencePack.icons[1]
-        end
-        newRecipe.icons = RichIcons(icon)
         newRecipe.subgroup = "igrys-enriched-science-pack"
         newRecipe.auto_recycle = false
         newRecipe.hidden_in_factoriopedia = true
@@ -24,8 +19,7 @@ local function CreateRecipe(recipe, sciencePack)
     end
 end
 
-
-if not settings.startup["igrys-enhance-modded-science-packs"] then
+if not settings.startup["igrys-enhance-modded-science-packs"].value then
     -- Vanilla Recipes
     CreateRecipe(data.raw["recipe"]["automation-science-pack"], data.raw["tool"]["automation-science-pack"])
     CreateRecipe(data.raw["recipe"]["logistic-science-pack"], data.raw["tool"]["logistic-science-pack"])
@@ -41,7 +35,7 @@ if not settings.startup["igrys-enhance-modded-science-packs"] then
     CreateRecipe(data.raw["recipe"]["promethium-science-pack"], data.raw["tool"]["promethium-science-pack"])
     
     -- Modded Recipes
-    CreateRecipe(data.raw["recipe"]["igrys-production-science-pack"], data.raw["tool"]["production-science-pack"])
+    CreateRecipe(data.raw["recipe"]["igrys-automation-science-pack"], data.raw["tool"]["automation-science-pack"])
     CreateRecipe(data.raw["recipe"]["igrys-mineral-science-pack"], data.raw["tool"]["igrys-mineral-science-pack"])
 else
     local items = data.raw["tool"]

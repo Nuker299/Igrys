@@ -10,7 +10,7 @@ data:extend({
         name = "igrys-enhance-modded-science-packs",
         localised_description = {"mod-setting-description.igrys-enhance-modded-science-packs"},
         setting_type = "startup",
-        default_value = false
+        default_value = true
     }, {
         type = "bool-setting",
         name = "igrys-steal-spidertron",

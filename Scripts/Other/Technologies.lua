@@ -423,7 +423,11 @@ data:extend({
                 type = "change-recipe-productivity",
                 recipe = "copper-plate",
                 change = 0.1
-            }, {
+            },{
+                type = "change-recipe-productivity",
+                recipe = "casting-copper",
+                change = 0.1
+            },{
                 type = "change-recipe-productivity",
                 recipe = "igrys-free-copper-plate",
                 change = 0.1,
