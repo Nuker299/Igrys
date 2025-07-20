@@ -122,7 +122,7 @@ data:extend{
     }, {
         type = "recipe",
         name = "igrys-science-enhancer-machine",
-        enabled = true,
+        enabled = false,
         ingredients =
         {
             {type="item", name="processing-unit", amount=25},
