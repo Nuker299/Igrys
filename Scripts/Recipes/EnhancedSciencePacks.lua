@@ -38,17 +38,16 @@ if not settings.startup["igrys-enhance-modded-science-packs"].value then
     CreateRecipe(data.raw["recipe"]["igrys-automation-science-pack"], data.raw["tool"]["automation-science-pack"])
     CreateRecipe(data.raw["recipe"]["igrys-mineral-science-pack"], data.raw["tool"]["igrys-mineral-science-pack"])
 else
-    local items = data.raw["tool"]
+    local items = data.raw["lab"]["lab"].inputs
     local sciencePacks = {} -- This will be a list (array)
     -- Collect all science pack names into a list
-    for name, item in pairs(items) do
-        if item.subgroup == "science-pack" then
-            if (item.auto_enrich == false) then
-                log("Auto enrich false for " .. item.name)
-            else
-                log("Found science pack " .. item.name)
-                table.insert(sciencePacks, item) -- Store the full item object
-            end
+    for _, item in ipairs(items) do
+        item = data.raw["tool"][item] -- Get the item object
+        if (item.auto_enrich == false) then
+            log("Auto enrich false for " .. item.name)
+        else
+            log("Found science pack " .. item.name)
+            table.insert(sciencePacks, item) -- Store the full item object
         end
     end
 

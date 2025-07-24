@@ -7,11 +7,11 @@ PlanetsLib:extend({
         name = "igrys",
         orbit = {
             parent = {
-                type = "planet",
-                name = "vulcanus",
+                type = "space-location",
+                name = "star",
             },
-            distance = 12,
-            orientation = 0.8,
+            distance = 14,
+            orientation = 0.0,
         },
         subgroup = "planets",
         label_orientation = 0.55,

@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0a8a43-d7c1-40a5-bdf7-403610941d3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Scripts/Other/ModsCompatibility.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Other/Technologies.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Other/Technologies.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Other/BaseIntegration.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Other/BaseIntegration.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Planet/Planet.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Planet/Planet.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Planet/Tiles.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Planet/Tiles.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Recipes/EnhancedSciencePacks.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Recipes/EnhancedSciencePacks.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale/en/whatever.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/whatever.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.lua" beforeDir="false" afterPath="$PROJECT_DIR$/settings.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Bump version to 1.5.1 and add Spanish translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump version to 1.5.1 and add Spanish translation" />
+    <MESSAGE value="1.5.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

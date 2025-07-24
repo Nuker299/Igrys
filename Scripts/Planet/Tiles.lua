@@ -10,13 +10,16 @@ data:extend({
         {
             probability_expression = "noise_igrys_light_oil > 0",
         },
-        collision_mask = tile_collision_masks.water(),
+        collision_mask = tile_collision_masks.oil_ocean_shallow(),
         fluid = "light-oil",
         effect = "water",
         particle_tints = tile_graphics.fulgora_oil_ocean_particle_tints,
         effect_color = { 255, 240, 150, 255 },
         effect_color_secondary = { 255, 200, 100, 255 },
         map_color = { 255, 240, 150 },
+        vehicle_friction_modifier = 4,
+        walking_speed_modifier = 0.8,
+        default_cover_tile = "foundation",
         variants =
         {
             transition = {

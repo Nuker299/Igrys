@@ -1,3 +1,5 @@
+-- Oil River Foundation
+table.insert(data.raw["item"]["foundation"].place_as_tile.tile_condition, "igrys-light-oil")
 
 -- Labs
 table.insert(data.raw["lab"]["lab"].inputs, "igrys-mineral-science-pack")
